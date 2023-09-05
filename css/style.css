@@ -196,3 +196,24 @@ header .container .menu .main-menu nav a:hover {
     display: block;
   }
 }
+
+.logo .container {
+  padding-top: 99px;
+  padding-bottom: 99px;
+}
+
+.features {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.features .container {
+  margin: 30px auto;
+  text-align: center;
+  border: 1px solid black;
+  margin: 30px;
+  padding: 30px;
+}
+.features .container .content {
+  display: flex;
+}
