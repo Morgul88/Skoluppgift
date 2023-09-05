@@ -49,6 +49,29 @@ html,body{
 
     }
 }
+.btn-long{
+    background-color: #F9D783;
+    border: 1px solid #191919;
+    color: #191919;
+    text-decoration: none;  
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    
+    width: 100%;
+
+    i{
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+
+    &:hover {
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: #d5d3d3;
+
+    }
+}
 
 header{
     background-color: #F0EFE9;
@@ -229,30 +252,68 @@ header{
 }
 .logo{
     .container{
-        padding-top: 99px;
-        padding-bottom: 99px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 .features{
     
     justify-content: center;
-    align-items: center;
     display:flex;
 
 
     .container{
-        margin: 30px auto;
-        text-align: center;
+        
         border: 1px solid black;
         margin:30px;
-        padding:30px;
+        padding:20px;
+        display: flex;
+        
         
         .content{
-            display:flex;
-        }
-        .content-right{
+            padding-top: 50px;
+            padding-bottom: 20px;
+            margin: 5px;
+            
+            
+            .content-box{
+                justify-content: center;
+            }
+            
+            a{
+               margin-left: 50px;
+                
 
+            }
+            h6{
+                padding-top: 20px;
+                
+                font-size: 22px;
+                font-weight: bold;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            p{
+                margin-bottom: 10px;
+                justify-content: center;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            h5{
+                font-size:45px;
+                font-weight: bold;
+                padding-top: 10px;
+                padding-bottom: 40px;
+                margin-left: 50px;
+                font-family: 'DM Sans', sans-serif;
+                margin-right: 100px;
+                
+            }
+            
+
+            
         }
+        
         
     }
 

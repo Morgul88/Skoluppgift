@@ -45,6 +45,26 @@ html, body {
   color: #d5d3d3;
 }
 
+.btn-long {
+  background-color: #F9D783;
+  border: 1px solid #191919;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  width: 100%;
+}
+.btn-long i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-long:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #d5d3d3;
+}
+
 header {
   background-color: #F0EFE9;
   padding: 16px;
@@ -198,22 +218,50 @@ header .container .menu .main-menu nav a:hover {
 }
 
 .logo .container {
-  padding-top: 99px;
-  padding-bottom: 99px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .features {
   justify-content: center;
-  align-items: center;
   display: flex;
 }
 .features .container {
-  margin: 30px auto;
-  text-align: center;
   border: 1px solid black;
   margin: 30px;
-  padding: 30px;
+  padding: 20px;
+  display: flex;
 }
 .features .container .content {
-  display: flex;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin: 5px;
+}
+.features .container .content .content-box {
+  justify-content: center;
+}
+.features .container .content a {
+  margin-left: 50px;
+}
+.features .container .content h6 {
+  padding-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.features .container .content p {
+  margin-bottom: 10px;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.features .container .content h5 {
+  font-size: 45px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  margin-left: 50px;
+  font-family: "DM Sans", sans-serif;
+  margin-right: 100px;
 }
