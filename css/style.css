@@ -47,7 +47,7 @@ html, body {
 
 .btn-long {
   background-color: #F9D783;
-  border: 1px solid #191919;
+  border: 1px solid #F9D783;
   color: #191919;
   text-decoration: none;
   padding: 12px 25px;
@@ -222,60 +222,48 @@ header .container .menu .main-menu nav a:hover {
 }
 
 .features {
-  justify-content: center;
-  display: flex;
+  margin: 80px;
 }
 .features .container {
+  margin: 80px;
+  padding: 80px;
   border: 1px solid #DBDAD5;
-  margin: 30px;
-  padding: 20px;
+  gap: 40px;
   display: flex;
-}
-.features .container .content {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  margin: 5px;
-}
-.features .container .content .content-box {
+  width: 1520px;
   justify-content: center;
 }
-.features .container .content a {
-  margin-left: 50px;
-  font-size: 40px;
-  color: #191919;
+.features .container .content-lada {
+  display: Flex;
+  flex-direction: column;
+  width: 40%;
 }
-.features .container .content h6 {
-  padding-top: 20px;
-  font-size: 22px;
-  font-weight: bold;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.features .container .content p {
-  margin-bottom: 10px;
-  justify-content: center;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.features .container .content h5 {
+.features .container .content-lada h5 {
   font-size: 45px;
   font-weight: bold;
-  padding-top: 10px;
-  padding-bottom: 40px;
-  margin-left: 50px;
   font-family: "DM Sans", sans-serif;
-  margin-right: 100px;
   color: #191919;
 }
-.features .container .content .btn-long {
-  margin-left: 130px;
+.features .container .content-lada .long {
   font-size: 16px;
-  padding: 20px;
-  width: 200px;
+  text-align: center;
+  margin-top: 25px;
 }
-.features .container .content .highlight-text {
+.features .container .content-lada .highlight-text {
   color: #F94D1C;
-  margin-left: 50px;
   font-size: 20px;
+  font-weight: bold;
+}
+.features .container .content {
+  display: Flex;
+  flex-direction: column;
+}
+.features .container .content .content-box i {
+  font-size: 40px;
+  color: #191919;
+  margin-bottom: 20px;
+}
+.features .container .content .content-box h6 {
+  font-size: 22px;
   font-weight: bold;
 }
