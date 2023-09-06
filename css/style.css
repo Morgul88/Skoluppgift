@@ -276,13 +276,18 @@ header .container .menu .main-menu nav a:hover {
   display: flex;
 }
 .about-company .container .content {
-  flex-direction: column;
   padding: 20px;
+}
+.about-company .container .learn-more {
+  color: white;
+  background-color: #191919;
+  border: 1px solid #191919;
 }
 .about-company .container a {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 30px;
 }
 .about-company .container .highlight-text {
   margin-top: 30px;
@@ -291,4 +296,18 @@ header .container .menu .main-menu nav a:hover {
 .about-company .container h1 {
   font-size: 45px;
   font-weight: bold;
+}
+.about-company .container .play-bottom {
+  height: 56px;
+  width: 56px;
+  padding: 12px;
+  border-radius: 50%;
+  border-color: #191919;
+  border-width: 1px;
+  border-style: solid;
+  color: #191919;
+  border: 1px solid #191919;
+}
+.about-company .container i {
+  padding: 10px;
 }

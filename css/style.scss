@@ -346,26 +346,47 @@ header{
         display:flex;
         
         .content{
-            
-            flex-direction: column;
             padding:20px;
         }
         .learn-more{
+           color: white;
+           background-color: #191919;
+           border: 1px solid #191919;
+
            
         }
         a{
             display:inline-block;
             margin-left: 10px;
             margin-right: 10px;
+            margin-top: 30px;
         }
         .highlight-text{
-                margin-top: 30px;
-                margin-bottom: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
                 
         }
         h1{
             font-size: 45px;
             font-weight: bold;
+        }
+        .play-bottom{
+
+            height: 56px;
+            width: 56px;
+            padding:12px;
+            border-radius: 50%;
+            border-color: #191919;
+            border-width: 1px;
+            border-style: solid;
+            color:#191919;
+            border: 1px solid #191919;
+        }
+        .text{
+            
+        }
+        i{
+            padding:10px;
         }
 
     }
