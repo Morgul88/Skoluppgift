@@ -53,7 +53,6 @@ html, body {
   padding: 12px 25px;
   border-radius: 25px;
   font-weight: 600;
-  width: 100%;
 }
 .btn-long i {
   margin-left: 8px;
@@ -227,7 +226,7 @@ header .container .menu .main-menu nav a:hover {
   display: flex;
 }
 .features .container {
-  border: 1px solid black;
+  border: 1px solid #DBDAD5;
   margin: 30px;
   padding: 20px;
   display: flex;
@@ -242,6 +241,8 @@ header .container .menu .main-menu nav a:hover {
 }
 .features .container .content a {
   margin-left: 50px;
+  font-size: 40px;
+  color: #191919;
 }
 .features .container .content h6 {
   padding-top: 20px;
@@ -264,4 +265,17 @@ header .container .menu .main-menu nav a:hover {
   margin-left: 50px;
   font-family: "DM Sans", sans-serif;
   margin-right: 100px;
+  color: #191919;
+}
+.features .container .content .btn-long {
+  margin-left: 130px;
+  font-size: 16px;
+  padding: 20px;
+  width: 200px;
+}
+.features .container .content .highlight-text {
+  color: #F94D1C;
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: bold;
 }

@@ -58,7 +58,7 @@ html,body{
     border-radius: 25px;
     font-weight: 600;
     
-    width: 100%;
+    
 
     i{
         margin-left: 8px;
@@ -264,7 +264,7 @@ header{
 
     .container{
         
-        border: 1px solid black;
+        border: 1px solid #DBDAD5;
         margin:30px;
         padding:20px;
         display: flex;
@@ -276,12 +276,15 @@ header{
             margin: 5px;
             
             
+            
             .content-box{
                 justify-content: center;
             }
             
             a{
                margin-left: 50px;
+               font-size: 40px;
+               color: #191919;
                 
 
             }
@@ -307,7 +310,22 @@ header{
                 margin-left: 50px;
                 font-family: 'DM Sans', sans-serif;
                 margin-right: 100px;
+                color: #191919;
                 
+            }
+            .btn-long{
+                margin-left: 130px;
+                font-size: 16px;
+                padding:20px;
+                width: 200px;
+                
+
+            }
+            .highlight-text{
+                color: #F94D1C;
+                margin-left: 50px;
+                font-size: 20px;
+                font-weight: bold;
             }
             
 
