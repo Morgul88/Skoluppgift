@@ -222,48 +222,73 @@ header .container .menu .main-menu nav a:hover {
 }
 
 .features {
-  margin: 80px;
+  padding-bottom: 100px;
 }
-.features .container {
-  margin: 80px;
-  padding: 80px;
+.features .content-stor-lada {
+  width: 1520px;
+  padding: 60px;
   border: 1px solid #DBDAD5;
   gap: 40px;
   display: flex;
-  width: 1520px;
   justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
 }
-.features .container .content-lada {
-  display: Flex;
-  flex-direction: column;
+.features .content-stor-lada .content-lada {
+  margin: 10px;
   width: 40%;
 }
-.features .container .content-lada h5 {
+.features .content-stor-lada .content-lada h5 {
   font-size: 45px;
   font-weight: bold;
   font-family: "DM Sans", sans-serif;
   color: #191919;
 }
-.features .container .content-lada .long {
+.features .content-stor-lada .content-lada .long {
   font-size: 16px;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 50px;
+  display: block;
 }
-.features .container .content-lada .highlight-text {
+.features .content-stor-lada .content-lada .highlight-text {
   color: #F94D1C;
   font-size: 20px;
   font-weight: bold;
 }
-.features .container .content {
+.features .content-stor-lada .content {
+  margin: 50px;
   display: Flex;
   flex-direction: column;
 }
-.features .container .content .content-box i {
+.features .content-stor-lada .content .content-box i {
   font-size: 40px;
   color: #191919;
   margin-bottom: 20px;
 }
-.features .container .content .content-box h6 {
+.features .content-stor-lada .content .content-box h6 {
   font-size: 22px;
+  font-weight: bold;
+}
+
+.about-company .container {
+  padding: 80px;
+  gap: 150px;
+  display: flex;
+}
+.about-company .container .content {
+  flex-direction: column;
+  padding: 20px;
+}
+.about-company .container a {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.about-company .container .highlight-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.about-company .container h1 {
+  font-size: 45px;
   font-weight: bold;
 }
