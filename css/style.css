@@ -7,6 +7,13 @@ html, body {
   font-weight: 400;
 }
 
+.streck {
+  border: 1px solid black;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  width: 15%;
+}
+
 .btn-yellow {
   background-color: #F9D783;
   border: 1px solid #F9D783;
@@ -341,6 +348,19 @@ header .container .menu .main-menu nav a:hover {
   flex-direction: column;
   justify-content: center;
 }
+.our-services .container .ensam-knapp {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+.our-services .container .ensam-knapp .browse-services-knapp {
+  padding: 20px;
+}
+.our-services .container .ensam-knapp .browse-services-knapp .extra {
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .our-services .container .content-text {
   margin-top: 100px;
   margin-bottom: 30px;
@@ -360,7 +380,7 @@ header .container .menu .main-menu nav a:hover {
 }
 .our-services .container .stor-box .box1 {
   background: white;
-  padding: 20px;
+  padding: 40px;
 }
 .our-services .container .stor-box .box1 .box1-knapp {
   background-color: #191919;
@@ -376,6 +396,7 @@ header .container .menu .main-menu nav a:hover {
   text-decoration: none;
   margin: 0;
   margin-left: auto;
+  margin-top: 60px;
 }
 .our-services .container .stor-box .box1 .box1-knapp i {
   color: white;
@@ -391,7 +412,7 @@ header .container .menu .main-menu nav a:hover {
 }
 .our-services .container .stor-box .box2 {
   background-color: #f9d783;
-  padding: 20px;
+  padding: 40px;
 }
 .our-services .container .stor-box .box2 .box2-knapp {
   width: 60px;
@@ -421,7 +442,7 @@ header .container .menu .main-menu nav a:hover {
 }
 .our-services .container .stor-box .box3 {
   background: white;
-  padding: 20px;
+  padding: 40px;
 }
 .our-services .container .stor-box .box3 .box3-knapp {
   background-color: #191919;
@@ -452,7 +473,7 @@ header .container .menu .main-menu nav a:hover {
 }
 .our-services .container .stor-box .box4 {
   background: white;
-  padding: 20px;
+  padding: 40px;
 }
 .our-services .container .stor-box .box4 .box4-knapp {
   background-color: #191919;

@@ -7,6 +7,12 @@ html,body{
     font-size: 16px;
     font-weight: 400;
 }
+.streck{
+    border: 1px solid black;  
+    margin-top: 25px;
+    margin-bottom: 30px;
+    width:15%
+}
 .btn-yellow{
     background-color: #F9D783;
     border: 1px solid #F9D783;
@@ -423,12 +429,29 @@ header{
 }
 .our-services{
     background: #f0efe9;
- 
+    
     .container{
 
         display:flex;
         flex-direction: column;
         justify-content: center;
+        
+
+        .ensam-knapp{
+           display:flex;
+           justify-content: center; 
+           margin: 40px;
+           
+           .browse-services-knapp{
+            
+            padding:20px;
+            .extra{
+                padding:20px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+           }
+        }
         
         .content-text{
             margin-top: 100px;
@@ -443,13 +466,15 @@ header{
             }
         }
         .stor-box{
-           
+            
             display:flex;
             margin:10px;
             gap:20px;
             .box1{
                 background: white;
-                padding:20px;
+                padding:40px;
+                
+                
 
                 .box1-knapp{
                 background-color: #191919;
@@ -465,6 +490,9 @@ header{
                 text-decoration: none;
                 margin:0;
                 margin-left: auto;
+                margin-top: 60px;
+                
+                
 
                 i{
                     color:white;
@@ -483,7 +511,7 @@ header{
             }
             .box2{
                 background-color: #f9d783;
-                padding:20px;
+                padding:40px;
 
                 .box2-knapp{
                     width: 60px;
@@ -516,7 +544,7 @@ header{
             }
             .box3{
                 background: white;
-                padding:20px;
+                padding:40px;
 
                 .box3-knapp{
                     background-color: #191919;
@@ -550,7 +578,7 @@ header{
             }
             .box4{
                 background: white;
-                padding:20px;
+                padding:40px;
 
                 .box4-knapp{
                     background-color: #191919;
