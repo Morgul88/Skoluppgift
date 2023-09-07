@@ -347,14 +347,11 @@ header{
         
         .content{
             padding:20px;
+            
+            display:flex;
+            flex-direction: column;
         }
-        .learn-more{
-           color: white;
-           background-color: #191919;
-           border: 1px solid #191919;
-
-           
-        }
+        
         a{
             display:inline-block;
             margin-left: 10px;
@@ -383,11 +380,45 @@ header{
             border: 1px solid #191919;
         }
         
-        i{
-            padding:10px;
+        
+        .rap{
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap:20px;
+            i{
+                
+            }
+            
+            .learn-more{
+                color: white;
+                background-color: #191919;
+                border: 1px solid #191919;
+                padding-left: 40px;
+                padding-right: 40px;
+                margin:0;
+                margin-right: 25px;
+                
+             }
+            .liten-lada{
+                width: 60px;
+                height:60px;
+                border: 1px solid #191919;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                text-align: center;
+                color: #191919;
+                text-decoration: none;
+                margin:0;
+            }
         }
+        
 
     }
     
 }
+
+
 

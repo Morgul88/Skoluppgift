@@ -277,11 +277,8 @@ header .container .menu .main-menu nav a:hover {
 }
 .about-company .container .content {
   padding: 20px;
-}
-.about-company .container .learn-more {
-  color: white;
-  background-color: #191919;
-  border: 1px solid #191919;
+  display: flex;
+  flex-direction: column;
 }
 .about-company .container a {
   display: inline-block;
@@ -308,6 +305,31 @@ header .container .menu .main-menu nav a:hover {
   color: #191919;
   border: 1px solid #191919;
 }
-.about-company .container i {
-  padding: 10px;
+.about-company .container .rap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.about-company .container .rap .learn-more {
+  color: white;
+  background-color: #191919;
+  border: 1px solid #191919;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0;
+  margin-right: 25px;
+}
+.about-company .container .rap .liten-lada {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  color: #191919;
+  text-decoration: none;
+  margin: 0;
 }
