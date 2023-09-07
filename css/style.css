@@ -1,4 +1,4 @@
-@import url("@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap");
 html, body {
   color: #191919;
@@ -207,6 +207,8 @@ header .container .menu .main-menu nav a:hover {
   font-size: 16px;
   display: block;
   border: 1px slid black;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 @media (min-width: 1200px) {
   .showcase .container .content a {
@@ -227,23 +229,34 @@ header .container .menu .main-menu nav a:hover {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.logo .container img {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .logo .container img {
+    display: block;
+  }
+}
+@media (max-width: 375px) {
+  .logo .container {
+    padding: 10px;
+  }
+}
 
 .features {
   padding-bottom: 100px;
 }
 .features .content-stor-lada {
-  width: 1520px;
   padding: 60px;
   border: 1px solid #DBDAD5;
   gap: 40px;
   display: flex;
   justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 .features .content-stor-lada .content-lada {
   margin: 10px;
-  width: 40%;
 }
 .features .content-stor-lada .content-lada h5 {
   font-size: 45px;
@@ -282,32 +295,32 @@ header .container .menu .main-menu nav a:hover {
   gap: 150px;
   display: flex;
 }
-.about-company .container .content {
+.about-company .content {
   padding: 20px;
   display: flex;
   flex-direction: column;
 }
-.about-company .container a {
+.about-company a {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 30px;
 }
-.about-company .container .highlight-text {
+.about-company .highlight-text {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.about-company .container h1 {
+.about-company h1 {
   font-size: 45px;
   font-weight: bold;
 }
-.about-company .container .rap {
+.about-company .rap {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
 }
-.about-company .container .rap .learn-more {
+.about-company .rap .learn-more {
   color: white;
   background-color: #191919;
   border: 1px solid #191919;
@@ -316,12 +329,12 @@ header .container .menu .main-menu nav a:hover {
   margin: 0;
   margin-right: 25px;
 }
-.about-company .container .rap .learn-more:hover {
+.about-company .rap .learn-more:hover {
   background-color: #ffffff;
   border: 1px solid #191919;
   color: #000000;
 }
-.about-company .container .rap .liten-lada {
+.about-company .rap .liten-lada {
   width: 60px;
   height: 60px;
   border: 1px solid #191919;
@@ -334,7 +347,7 @@ header .container .menu .main-menu nav a:hover {
   text-decoration: none;
   margin: 0;
 }
-.about-company .container .rap .liten-lada:hover {
+.about-company .rap .liten-lada:hover {
   background-color: #F9D783;
   border: 1px solid #ffffff;
   color: #000000;
@@ -347,6 +360,7 @@ header .container .menu .main-menu nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 .our-services .container .ensam-knapp {
   display: flex;
