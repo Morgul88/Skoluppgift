@@ -281,10 +281,10 @@ header{
 }
 .features{
 
-    padding-bottom: 80px;
+    padding-bottom: 10px;
     @media (min-width:376px){
         .features{
-            padding-bottom: 10px;
+            padding-bottom: 80px;
         }
     }   
     .container{
@@ -305,7 +305,10 @@ header{
                 font-weight: bold;
                 font-family: 'DM Sans', sans-serif;
                 color: #191919;
-
+                text-align: center;
+                @media (min-width:376px){
+                    text-align: start;
+                }
                 
             }
             .long{
@@ -356,6 +359,7 @@ header{
                 
 }
 
+
 .about-company{
 
     .container{
@@ -381,9 +385,13 @@ header{
             padding:20px;
             display:flex;
             flex-direction: column;
-
+            text-align: center;
         }
-
+        @media (min-width:1200px){
+            .content {
+                text-align: left;
+            }
+        }
         a{
             display:inline-block;
             margin-left: 10px;
@@ -404,7 +412,7 @@ header{
         
         .rap{
             display:flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             gap:20px;
             
@@ -452,7 +460,9 @@ header{
                 border: 1px solid #ffffff;
                 color: #000000;
 
-                
+                .knapp{
+                    color: #191919;
+                }
      
             }
             @media(min-width: 376px){
@@ -461,10 +471,10 @@ header{
         }
         
     }
-    @media (min-width:1200px){
+    @media (min-width:376px){
         .container{
             
-            padding:80px;
+            padding:60px;
         }
     }         
 }
