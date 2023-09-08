@@ -339,6 +339,10 @@ header .container .menu .main-menu nav a:hover {
   font-size: 45px;
   font-weight: bold;
 }
+.about-company h2 {
+  color: #F94D1C;
+  font-weight: bold;
+}
 .about-company .rap {
   display: flex;
   justify-content: center;
@@ -396,5 +400,183 @@ header .container .menu .main-menu nav a:hover {
 @media (min-width: 376px) {
   .about-company .container {
     padding: 60px;
+  }
+}
+
+.our-services {
+  background: #f0efe9;
+}
+.our-services .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.our-services .container .btn-yellow {
+  display: block;
+  margin: 10px;
+}
+@media (min-width: 1140px) {
+  .our-services .container .btn-yellow {
+    display: none;
+  }
+}
+.our-services .container .ensam-knapp {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+.our-services .container .ensam-knapp .browse-services-knapp {
+  padding: 20px;
+}
+.our-services .container .ensam-knapp .browse-services-knapp .extra {
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.our-services .container .content-text {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.our-services .container .content-text h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #F94D1C;
+}
+.our-services .container .content-text h1 {
+  font-weight: bold;
+}
+.our-services .container .stor-box {
+  display: none;
+  margin: 10px;
+  gap: 20px;
+}
+.our-services .container .stor-box .box1 {
+  background: white;
+  padding: 40px;
+}
+.our-services .container .stor-box .box1 .box1-knapp {
+  background-color: #191919;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  color: #191919;
+  text-decoration: none;
+  margin: 0;
+  margin-left: auto;
+  margin-top: 60px;
+}
+.our-services .container .stor-box .box1 .box1-knapp i {
+  color: white;
+  font-size: 20px;
+}
+.our-services .container .stor-box .box1 .box1-knapp:hover {
+  background-color: #F9D783;
+  border: 1px solid #ffffff;
+  color: #000000;
+}
+.our-services .container .stor-box .box1 .box1-knapp:hover i {
+  color: #191919;
+}
+.our-services .container .stor-box .box2 {
+  background-color: #f9d783;
+  padding: 40px;
+}
+.our-services .container .stor-box .box2 .box2-knapp {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  color: #191919;
+  text-decoration: none;
+  margin: 0;
+  margin-left: auto;
+  background: white;
+  border: none;
+}
+.our-services .container .stor-box .box2 .box2-knapp i {
+  font-size: 20px;
+}
+.our-services .container .stor-box .box2 .box2-knapp:hover {
+  background-color: #191919;
+  color: #ffffff;
+}
+.our-services .container .stor-box .box2 .box2-knapp:hover i {
+  color: #ffffff;
+}
+.our-services .container .stor-box .box3 {
+  background: white;
+  padding: 40px;
+}
+.our-services .container .stor-box .box3 .box3-knapp {
+  background-color: #191919;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  color: #191919;
+  text-decoration: none;
+  margin: 0;
+  margin-left: auto;
+}
+.our-services .container .stor-box .box3 .box3-knapp i {
+  color: white;
+  font-size: 20px;
+}
+.our-services .container .stor-box .box3 .box3-knapp:hover {
+  background-color: #F9D783;
+  border: 1px solid #ffffff;
+  color: #000000;
+}
+.our-services .container .stor-box .box3 .box3-knapp:hover i {
+  color: #191919;
+}
+.our-services .container .stor-box .box4 {
+  background: white;
+  padding: 40px;
+}
+.our-services .container .stor-box .box4 .box4-knapp {
+  background-color: #191919;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  color: #191919;
+  text-decoration: none;
+  margin: 0;
+  margin-left: auto;
+}
+.our-services .container .stor-box .box4 .box4-knapp i {
+  color: white;
+  font-size: 20px;
+}
+.our-services .container .stor-box .box4 .box4-knapp:hover {
+  background-color: #F9D783;
+  border: 1px solid #ffffff;
+  color: #000000;
+}
+.our-services .container .stor-box .box4 .box4-knapp:hover i {
+  color: #191919;
+}
+@media (min-width: 1140px) {
+  .our-services .container .stor-box {
+    display: flex;
   }
 }
