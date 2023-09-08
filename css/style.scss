@@ -260,53 +260,46 @@ header{
     }
 
 }
+
 .logo{
     .container{
-        
+        display:none;
+        justify-content: center;
         padding-top: 100px;
         padding-bottom: 100px;
 
-        img{
-            display:none;
-            
-            @media (min-width:1200px){
-                display:block;
-            }
-        }
+        
     }
-    @media (max-width:375px){
+    @media (min-width:1200px){
         .container{
-            padding:10px;
+            display:flex;
         }
     }
+    
+    
+    
 }
 .features{
-    
-    
-    padding-bottom: 100px;
-    
-    .content-stor-lada{
 
-        
-        
+    padding-bottom: 80px;
+    @media (min-width:376px){
+        .features{
+            padding-bottom: 10px;
+        }
+    }   
+    .container{
+
         padding:60px;
         border: 1px solid #DBDAD5;
         gap: 40px;
         display: flex;
         justify-content: center;
-        margin-right: 100px;
-        margin-left: 100px;
-        
-        
         
         .content-lada{
-            
+            display:flex;
+            flex-direction: column;
             margin: 10px;
-            // Lägger lada i colum istället för flex
-            
-            // kommer alltid utgå från 40% i alla responsiva storlekar
-            
-
+        
             h5{
                 font-size:45px;
                 font-weight: bold;
@@ -333,9 +326,10 @@ header{
         .content{
 
             margin:50px;
-            display:Flex;
+            display:none;
             flex-direction: column;
-
+            
+            
             .content-box{
                 i{
                     font-size: 40px;
@@ -351,18 +345,37 @@ header{
                 
             }
         }
+        @media (min-width:1200px){
+            .content{
+                display:flex;
+            }
+        }
+
     }
     
-            
-}     
+                
+}
+
 .about-company{
+
     .container{
         
-        padding:80px;
+        padding:10px;
         gap:150px;
         display:flex;
+        justify-content: center;
+
         
-    
+        img{
+            display:none;
+            @media (min-width:1200px){
+                
+                    display:block;
+                    
+                }
+        }
+        
+        
         }
         .content{
             padding:20px;
@@ -395,7 +408,13 @@ header{
             align-items: center;
             gap:20px;
             
-            
+            span{
+                display:none;
+                
+                @media (min-width:376px){
+                    display:flex;
+                }
+            }
             
             .learn-more{
                 color: white;
@@ -419,7 +438,7 @@ header{
                 width: 60px;
                 height:60px;
                 border: 1px solid #191919;
-                display:flex;
+                display: none;
                 justify-content: center;
                 align-items: center;
                 border-radius: 50%;
@@ -432,198 +451,211 @@ header{
                 background-color: #F9D783;
                 border: 1px solid #ffffff;
                 color: #000000;
-            }      
-        } 
-    }       
-}
 
-.our-services{
-    background: #f0efe9;
-    
-    .container{
-
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-
-        .ensam-knapp{
-           display:flex;
-           justify-content: center; 
-           margin: 40px;
-           
-           .browse-services-knapp{
-            
-            padding:20px;
-            .extra{
-                padding:20px;
-                padding-left: 30px;
-                padding-right: 30px;
-            }
-           }
-        }
-        
-        .content-text{
-            margin-top: 100px;
-            margin-bottom: 30px;
-            h2{
-                color: #F94D1C;
-                font-size: 20px;
-                font-weight: bold;
-            }
-            h1{
-                font-weight: bold;
-            }
-        }
-        .stor-box{
-            
-            display:flex;
-            margin:10px;
-            gap:20px;
-            .box1{
-                background: white;
-                padding:40px;
                 
-                
-
-                .box1-knapp{
-                background-color: #191919;
-                width: 60px;
-                height:60px;
-                border: 1px solid #191919;
+     
+            }
+            @media(min-width: 376px){
                 display:flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50%;
-                text-align: center;
-                color: #191919;
-                text-decoration: none;
-                margin:0;
-                margin-left: auto;
-                margin-top: 60px;
-                
-                
-
-                i{
-                    color:white;
-                    font-size: 20px;
-                }
-                &:hover {
-                    background-color: #F9D783;
-                    border: 1px solid #ffffff;
-                    color: #000000;
-                    i{
-                        color:#191919;
-                    }
-                }
-                }
-                
             }
-            .box2{
-                background-color: #f9d783;
-                padding:40px;
-
-                .box2-knapp{
-                    width: 60px;
-                    height:60px;
-                    border: 1px solid #191919;
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 50%;
-                    text-align: center;
-                    color: #191919;
-                    text-decoration: none;
-                    margin:0;
-                    margin-left: auto;
-                    background: white;
-                    border: none;
-                    i{
-                        
-                        font-size: 20px;
-                        
-                    }
-                    &:hover {
-                        background-color: #191919;
-                        color: #ffffff;
-                        i{
-                            color:#ffffff;
-                        }
-                    }
-                    }
-            }
-            .box3{
-                background: white;
-                padding:40px;
-
-                .box3-knapp{
-                    background-color: #191919;
-                    width: 60px;
-                    height:60px;
-                    border: 1px solid #191919;
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 50%;
-                    text-align: center;
-                    color: #191919;
-                    text-decoration: none;
-                    margin:0;
-                    margin-left: auto;
-                    i{
-                        color:white;
-                        font-size: 20px;
-
-                    }
-                    &:hover {
-                        background-color: #F9D783;
-                        border: 1px solid #ffffff;
-                        color: #000000;
-                        i{
-                            color:#191919;
-                        }
-                    }
-                    }
-                    
-            }
-            .box4{
-                background: white;
-                padding:40px;
-
-                .box4-knapp{
-                    background-color: #191919;
-                    width: 60px;
-                    height:60px;
-                    border: 1px solid #191919;
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 50%;
-                    text-align: center;
-                    color: #191919;
-                    text-decoration: none;
-                    margin:0;
-                    margin-left: auto;
-                    i{
-                        color:white;
-                        font-size: 20px;
-                    }
-                    &:hover {
-                        background-color: #F9D783;
-                        border: 1px solid #ffffff;
-                        color: #000000;
-                        i{
-                            color:#191919;
-                        }
-                    }
-                    }
-            }
-
         }
-        
-            
         
     }
+    @media (min-width:1200px){
+        .container{
+            
+            padding:80px;
+        }
+    }         
 }
+
+// .our-services{
+//     background: #f0efe9;
+    
+//     .container{
+
+//         display:flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         text-align: center;
+
+//         .ensam-knapp{
+//            display:flex;
+//            justify-content: center; 
+//            margin: 40px;
+           
+//            .browse-services-knapp{
+            
+//             padding:20px;
+//             .extra{
+//                 padding:20px;
+//                 padding-left: 30px;
+//                 padding-right: 30px;
+//             }
+//            }
+//         }
+        
+//         .content-text{
+//             margin-top: 100px;
+//             margin-bottom: 30px;
+//             h2{
+//                 color: #F94D1C;
+//                 font-size: 20px;
+//                 font-weight: bold;
+//             }
+//             h1{
+//                 font-weight: bold;
+//             }
+//         }
+//         .stor-box{
+            
+//             display:flex;
+//             margin:10px;
+//             gap:20px;
+//             .box1{
+//                 background: white;
+//                 padding:40px;
+                
+                
+
+//                 .box1-knapp{
+//                 background-color: #191919;
+//                 width: 60px;
+//                 height:60px;
+//                 border: 1px solid #191919;
+//                 display:flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 border-radius: 50%;
+//                 text-align: center;
+//                 color: #191919;
+//                 text-decoration: none;
+//                 margin:0;
+//                 margin-left: auto;
+//                 margin-top: 60px;
+                
+                
+
+//                 i{
+//                     color:white;
+//                     font-size: 20px;
+//                 }
+//                 &:hover {
+//                     background-color: #F9D783;
+//                     border: 1px solid #ffffff;
+//                     color: #000000;
+//                     i{
+//                         color:#191919;
+//                     }
+//                 }
+//                 }
+                
+//             }
+//             .box2{
+//                 background-color: #f9d783;
+//                 padding:40px;
+
+//                 .box2-knapp{
+//                     width: 60px;
+//                     height:60px;
+//                     border: 1px solid #191919;
+//                     display:flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     border-radius: 50%;
+//                     text-align: center;
+//                     color: #191919;
+//                     text-decoration: none;
+//                     margin:0;
+//                     margin-left: auto;
+//                     background: white;
+//                     border: none;
+//                     i{
+                        
+//                         font-size: 20px;
+                        
+//                     }
+//                     &:hover {
+//                         background-color: #191919;
+//                         color: #ffffff;
+//                         i{
+//                             color:#ffffff;
+//                         }
+//                     }
+//                     }
+//             }
+//             .box3{
+//                 background: white;
+//                 padding:40px;
+
+//                 .box3-knapp{
+//                     background-color: #191919;
+//                     width: 60px;
+//                     height:60px;
+//                     border: 1px solid #191919;
+//                     display:flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     border-radius: 50%;
+//                     text-align: center;
+//                     color: #191919;
+//                     text-decoration: none;
+//                     margin:0;
+//                     margin-left: auto;
+//                     i{
+//                         color:white;
+//                         font-size: 20px;
+
+//                     }
+//                     &:hover {
+//                         background-color: #F9D783;
+//                         border: 1px solid #ffffff;
+//                         color: #000000;
+//                         i{
+//                             color:#191919;
+//                         }
+//                     }
+//                     }
+                    
+//             }
+//             .box4{
+//                 background: white;
+//                 padding:40px;
+
+//                 .box4-knapp{
+//                     background-color: #191919;
+//                     width: 60px;
+//                     height:60px;
+//                     border: 1px solid #191919;
+//                     display:flex;
+//                     justify-content: center;
+//                     align-items: center;
+//                     border-radius: 50%;
+//                     text-align: center;
+//                     color: #191919;
+//                     text-decoration: none;
+//                     margin:0;
+//                     margin-left: auto;
+//                     i{
+//                         color:white;
+//                         font-size: 20px;
+//                     }
+//                     &:hover {
+//                         background-color: #F9D783;
+//                         border: 1px solid #ffffff;
+//                         color: #000000;
+//                         i{
+//                             color:#191919;
+//                         }
+//                     }
+//                     }
+//             }
+
+//         }
+        
+            
+        
+//     }
+// }
 
 

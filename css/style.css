@@ -226,74 +226,87 @@ header .container .menu .main-menu nav a:hover {
 }
 
 .logo .container {
+  display: none;
+  justify-content: center;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.logo .container img {
-  display: none;
-}
 @media (min-width: 1200px) {
-  .logo .container img {
-    display: block;
-  }
-}
-@media (max-width: 375px) {
   .logo .container {
-    padding: 10px;
+    display: flex;
   }
 }
 
 .features {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
-.features .content-stor-lada {
+@media (min-width: 376px) {
+  .features .features {
+    padding-bottom: 10px;
+  }
+}
+.features .container {
   padding: 60px;
   border: 1px solid #DBDAD5;
   gap: 40px;
   display: flex;
   justify-content: center;
-  margin-right: 100px;
-  margin-left: 100px;
 }
-.features .content-stor-lada .content-lada {
+.features .container .content-lada {
+  display: flex;
+  flex-direction: column;
   margin: 10px;
 }
-.features .content-stor-lada .content-lada h5 {
+.features .container .content-lada h5 {
   font-size: 45px;
   font-weight: bold;
   font-family: "DM Sans", sans-serif;
   color: #191919;
 }
-.features .content-stor-lada .content-lada .long {
+.features .container .content-lada .long {
   font-size: 16px;
   text-align: center;
   margin-top: 50px;
   display: block;
 }
-.features .content-stor-lada .content-lada .highlight-text {
+.features .container .content-lada .highlight-text {
   color: #F94D1C;
   font-size: 20px;
   font-weight: bold;
 }
-.features .content-stor-lada .content {
+.features .container .content {
   margin: 50px;
-  display: Flex;
+  display: none;
   flex-direction: column;
 }
-.features .content-stor-lada .content .content-box i {
+.features .container .content .content-box i {
   font-size: 40px;
   color: #191919;
   margin-bottom: 20px;
 }
-.features .content-stor-lada .content .content-box h6 {
+.features .container .content .content-box h6 {
   font-size: 22px;
   font-weight: bold;
 }
+@media (min-width: 1200px) {
+  .features .container .content {
+    display: flex;
+  }
+}
 
 .about-company .container {
-  padding: 80px;
+  padding: 10px;
   gap: 150px;
   display: flex;
+  justify-content: center;
+}
+.about-company .container img {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .about-company .container img {
+    display: block;
+  }
 }
 .about-company .content {
   padding: 20px;
@@ -320,6 +333,14 @@ header .container .menu .main-menu nav a:hover {
   align-items: center;
   gap: 20px;
 }
+.about-company .rap span {
+  display: none;
+}
+@media (min-width: 376px) {
+  .about-company .rap span {
+    display: flex;
+  }
+}
 .about-company .rap .learn-more {
   color: white;
   background-color: #191919;
@@ -338,7 +359,7 @@ header .container .menu .main-menu nav a:hover {
   width: 60px;
   height: 60px;
   border: 1px solid #191919;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -352,167 +373,13 @@ header .container .menu .main-menu nav a:hover {
   border: 1px solid #ffffff;
   color: #000000;
 }
-
-.our-services {
-  background: #f0efe9;
+@media (min-width: 376px) {
+  .about-company .rap .liten-lada {
+    display: flex;
+  }
 }
-.our-services .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.our-services .container .ensam-knapp {
-  display: flex;
-  justify-content: center;
-  margin: 40px;
-}
-.our-services .container .ensam-knapp .browse-services-knapp {
-  padding: 20px;
-}
-.our-services .container .ensam-knapp .browse-services-knapp .extra {
-  padding: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.our-services .container .content-text {
-  margin-top: 100px;
-  margin-bottom: 30px;
-}
-.our-services .container .content-text h2 {
-  color: #F94D1C;
-  font-size: 20px;
-  font-weight: bold;
-}
-.our-services .container .content-text h1 {
-  font-weight: bold;
-}
-.our-services .container .stor-box {
-  display: flex;
-  margin: 10px;
-  gap: 20px;
-}
-.our-services .container .stor-box .box1 {
-  background: white;
-  padding: 40px;
-}
-.our-services .container .stor-box .box1 .box1-knapp {
-  background-color: #191919;
-  width: 60px;
-  height: 60px;
-  border: 1px solid #191919;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  text-align: center;
-  color: #191919;
-  text-decoration: none;
-  margin: 0;
-  margin-left: auto;
-  margin-top: 60px;
-}
-.our-services .container .stor-box .box1 .box1-knapp i {
-  color: white;
-  font-size: 20px;
-}
-.our-services .container .stor-box .box1 .box1-knapp:hover {
-  background-color: #F9D783;
-  border: 1px solid #ffffff;
-  color: #000000;
-}
-.our-services .container .stor-box .box1 .box1-knapp:hover i {
-  color: #191919;
-}
-.our-services .container .stor-box .box2 {
-  background-color: #f9d783;
-  padding: 40px;
-}
-.our-services .container .stor-box .box2 .box2-knapp {
-  width: 60px;
-  height: 60px;
-  border: 1px solid #191919;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  text-align: center;
-  color: #191919;
-  text-decoration: none;
-  margin: 0;
-  margin-left: auto;
-  background: white;
-  border: none;
-}
-.our-services .container .stor-box .box2 .box2-knapp i {
-  font-size: 20px;
-}
-.our-services .container .stor-box .box2 .box2-knapp:hover {
-  background-color: #191919;
-  color: #ffffff;
-}
-.our-services .container .stor-box .box2 .box2-knapp:hover i {
-  color: #ffffff;
-}
-.our-services .container .stor-box .box3 {
-  background: white;
-  padding: 40px;
-}
-.our-services .container .stor-box .box3 .box3-knapp {
-  background-color: #191919;
-  width: 60px;
-  height: 60px;
-  border: 1px solid #191919;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  text-align: center;
-  color: #191919;
-  text-decoration: none;
-  margin: 0;
-  margin-left: auto;
-}
-.our-services .container .stor-box .box3 .box3-knapp i {
-  color: white;
-  font-size: 20px;
-}
-.our-services .container .stor-box .box3 .box3-knapp:hover {
-  background-color: #F9D783;
-  border: 1px solid #ffffff;
-  color: #000000;
-}
-.our-services .container .stor-box .box3 .box3-knapp:hover i {
-  color: #191919;
-}
-.our-services .container .stor-box .box4 {
-  background: white;
-  padding: 40px;
-}
-.our-services .container .stor-box .box4 .box4-knapp {
-  background-color: #191919;
-  width: 60px;
-  height: 60px;
-  border: 1px solid #191919;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  text-align: center;
-  color: #191919;
-  text-decoration: none;
-  margin: 0;
-  margin-left: auto;
-}
-.our-services .container .stor-box .box4 .box4-knapp i {
-  color: white;
-  font-size: 20px;
-}
-.our-services .container .stor-box .box4 .box4-knapp:hover {
-  background-color: #F9D783;
-  border: 1px solid #ffffff;
-  color: #000000;
-}
-.our-services .container .stor-box .box4 .box4-knapp:hover i {
-  color: #191919;
+@media (min-width: 1200px) {
+  .about-company .container {
+    padding: 80px;
+  }
 }
