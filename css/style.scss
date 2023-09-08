@@ -78,7 +78,6 @@ html,body{
 
     }
 }
-
 header{
     background-color: #F0EFE9;
     padding: 16px;
@@ -260,7 +259,6 @@ header{
     }
 
 }
-
 .logo{
     .container{
         display:none;
@@ -358,7 +356,6 @@ header{
     
                 
 }
-
 .about-company{
 
     .container{
@@ -494,8 +491,10 @@ header{
         .btn-yellow{
             display:block;
             margin:10px;
+            
             @media (min-width:1140px){
                 display:none
+
             }
         }
         
@@ -534,9 +533,7 @@ header{
             display:none;
             margin:10px;
             gap:20px;
-            
-            
-            
+
             .box1{
                 background: white;
                 padding:40px;
