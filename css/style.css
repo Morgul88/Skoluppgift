@@ -352,7 +352,7 @@ header .container .menu .main-menu nav a:hover {
 .about-company .rap span {
   display: none;
 }
-@media (min-width: 376px) {
+@media (min-width: 391px) {
   .about-company .rap span {
     display: flex;
   }
@@ -392,7 +392,7 @@ header .container .menu .main-menu nav a:hover {
 .about-company .rap .liten-lada:hover .knapp {
   color: #191919;
 }
-@media (min-width: 376px) {
+@media (min-width: 391px) {
   .about-company .rap .liten-lada {
     display: flex;
   }
