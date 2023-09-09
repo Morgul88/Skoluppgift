@@ -270,10 +270,18 @@ header .container .menu .main-menu nav a:hover {
   }
 }
 .features .container .content-lada .long {
+  margin-left: auto;
+  margin-right: auto;
   font-size: 16px;
   text-align: center;
   margin-top: 50px;
   display: block;
+}
+@media (min-width: 1200px) {
+  .features .container .content-lada .long {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .features .container .content-lada .highlight-text {
   color: #F94D1C;
