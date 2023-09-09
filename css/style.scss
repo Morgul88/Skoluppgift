@@ -701,6 +701,34 @@ header{
         }
     }
 }
+.Why-choose-us{
+    .container{
+        display:flex;
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        gap: 60px;
+        border: 1px solid black;
+
+        .bild {
+            width: 100%;
+            margin:10px;
+            margin-bottom: 40px;
+            border: 10px solid red;
+            
+            height: auto;
+            flex-shrink: 2;
+            
+        }
+        .text-under-content{
+            width: 100%;
+            margin:30px;
+            border: 1px solid black;
+        }
+
+    }
+    
+}
         
 
 
