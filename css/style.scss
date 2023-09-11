@@ -702,30 +702,74 @@ header{
     }
 }
 .Why-choose-us{
+    
     .container{
+        padding:60px;
         display:flex;
-        justify-content: center;
+        justify-content: space-between;
         margin-top: 60px;
         margin-bottom: 60px;
         gap: 60px;
-        border: 1px solid black;
-
-        .bild {
-            width: 100%;
-            margin:10px;
-            margin-bottom: 40px;
-            border: 10px solid red;
-            
+        
+        
+        
+        .box1{
+            width: 40%;
             height: auto;
-            flex-shrink: 2;
+            .huvud-text{
+                
+                
+                
+                h2{
+                    font-size: 20px;
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                    color: #F94D1C;
+                    
+                }
+                h1{
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
             
-        }
-        .text-under-content{
-            width: 100%;
-            margin:30px;
-            border: 1px solid black;
-        }
-
+                
+                
+                
+            
+            
+        }    
+        .box2{
+            width: 60%;
+            height: auto;
+            
+            
+            
+            .over{
+                
+                height: 60%;
+                padding-left: 60px;
+                padding-bottom: 60px;
+                img{
+                    margin-left: 30px;
+                }
+            }
+            .under{
+                
+                height:40%;
+                width: 3000px;
+                background: #f0efe9; 
+                
+            }
+            
+        }    
+            
+        
+        
+        
+        
     }
     
 }
