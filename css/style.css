@@ -7,6 +7,21 @@ html, body {
   font-weight: 400;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: #0E1021;
+  color: white;
+}
+
+.wrapper-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
 .streck {
   border: 1px solid black;
   margin-top: 25px;
@@ -73,56 +88,47 @@ html, body {
 
 header {
   background-color: #F0EFE9;
-  padding: 16px;
 }
 header .container {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
+  padding: 16px;
+  display: grid;
   align-items: center;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "logo bars";
 }
-header .container .menu-bars {
+@media (min-width: 992px) {
+  header .container {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo cib social" "logo menu menu";
+  }
+}
+header .container .btn-menubars {
+  grid-area: bars;
   font-size: 25px;
   border: none;
   background: transparent;
 }
 @media (min-width: 992px) {
-  header .container .menu-bars {
+  header .container .btn-menubars {
     display: none;
   }
 }
-header .container .menu {
+header .container .logotype {
+  grid-area: logo;
+  margin-right: 40px;
+}
+header .container .contactinformation-bar {
+  grid-area: cib;
   display: none;
-  flex: 1;
-  gap: 20px;
-}
-@media (min-width: 992px) {
-  header .container .menu {
-    display: block;
-  }
-}
-header .container .menu .top-menu {
-  display: flex;
-  justify-content: flex-end;
-  border-bottom: 1px solid #DBDAD5;
-  padding-bottom: 10px;
+  justify-content: flex-start;
   align-items: center;
 }
 @media (min-width: 1200px) {
-  header .container .menu .top-menu {
-    justify-content: space-between;
-  }
-}
-header .container .menu .top-menu .contact-information {
-  display: none;
-  align-items: center;
-}
-@media (min-width: 1200px) {
-  header .container .menu .top-menu .contact-information {
+  header .container .contactinformation-bar {
     display: flex;
   }
 }
-header .container .menu .top-menu .contact-information .content-box {
+header .container .contactinformation-bar .content-box {
   margin-right: 30px;
   padding-right: 20px;
   border-right: 1px solid #DBDAD5;
@@ -130,38 +136,65 @@ header .container .menu .top-menu .contact-information .content-box {
   font-size: 15px;
   font-weight: 300;
 }
-header .container .menu .top-menu .contact-information .content-box i {
+header .container .contactinformation-bar .content-box i {
   margin-right: 5px;
   font-size: 1.2em;
   color: #707070;
 }
-header .container .menu .top-menu .contact-information .content-box.last {
+header .container .contactinformation-bar .content-box.last {
   border: none;
 }
-header .container .menu .top-menu .social-media a {
-  color: #191919;
-  font-size: 1.3rem;
-  margin-left: 10px;
+header .container .socialmedia-bar {
+  grid-area: social;
+  display: none;
 }
-header .container .menu .top-menu .social-media a:hover {
-  color: #666666;
+@media (min-width: 992px) {
+  header .container .socialmedia-bar {
+    display: block;
+  }
+  header .container .socialmedia-bar a {
+    color: #191919;
+    font-size: 1.3rem;
+    margin-left: 10px;
+  }
+  header .container .socialmedia-bar a:hover {
+    color: #666666;
+  }
 }
-header .container .menu .main-menu {
-  display: flex;
+header .container .menu {
+  grid-area: menu;
+  border-top: 1px solid #DAD9D3;
+  display: none;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
   padding-top: 10px;
 }
-header .container .menu .main-menu nav a {
+@media (min-width: 992px) {
+  header .container .menu {
+    display: flex;
+  }
+}
+header .container nav a {
+  display: inline-block;
   color: #191919;
   text-decoration: none;
   margin-right: 35px;
+  position: relative;
 }
-header .container .menu .main-menu nav a.active {
-  font-weight: 400;
+header .container nav a.active {
+  font-weight: 500;
 }
-header .container .menu .main-menu nav a:hover {
-  text-decoration: underline;
+header .container nav a.active:after, header .container nav a:hover::after {
+  content: "";
+  position: absolute;
+  font-weight: 500;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
 }
 
 .showcase {
