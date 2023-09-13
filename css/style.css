@@ -818,3 +818,13 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .meet-our-team .container .grid-content .picture-content:hover {
   text-decoration: underline;
 }
+
+.testimonial {
+  background-color: #EDCF87;
+}
+.testimonial .container {
+  background-color: white;
+}
+.testimonial .container .section-title {
+  text-align: center;
+}
