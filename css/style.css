@@ -774,3 +774,47 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .project-and-case .container .project-and-cases .project:hover .readmore {
   text-decoration: underline;
 }
+
+.meet-our-team {
+  background-color: #EDCF87;
+}
+.meet-our-team .container .head-liner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.meet-our-team .container .knapp .btn-yellow {
+  border: 1px solid black;
+  padding: 20px 40px 20px 40px;
+}
+.meet-our-team .container .section-title {
+  padding: 80px 0px 80px 0px;
+}
+.meet-our-team .container .grid-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 20px;
+}
+.meet-our-team .container .grid-content .picture-content {
+  padding-bottom: 60px;
+  text-decoration: none;
+  color: #191919;
+}
+.meet-our-team .container .grid-content .picture-content img {
+  padding-bottom: 30px;
+}
+.meet-our-team .container .grid-content .picture-content h5 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.meet-our-team .container .grid-content .picture-content p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.meet-our-team .container .grid-content .picture-content:hover {
+  text-decoration: underline;
+}

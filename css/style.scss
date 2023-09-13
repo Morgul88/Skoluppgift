@@ -913,7 +913,53 @@ header{
         }
     }
 }
-        
+.meet-our-team{
+    background-color: #EDCF87;
+    .container{
+        .head-liner{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .knapp .btn-yellow{
+            border: 1px solid black;
+            padding: 20px 40px 20px 40px;
+        }
+        .section-title{
+            padding:80px 0px 80px 0px;
+        }
+        .grid-content{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 30px;
+            row-gap: 20px;
+            .picture-content{
+                padding-bottom: 60px;
+                text-decoration: none;
+                color: #191919;
+                img{
+                    padding-bottom: 30px;
+                }
+                h5{
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+                p{
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    
+                }
+                &:hover{
+                    text-decoration: underline;
+                } 
+            }
+        }
+
+    }
+
+}        
 
 
 
