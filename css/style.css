@@ -651,6 +651,61 @@ header .container nav a.active:after, header .container nav a:hover::after {
   }
 }
 
+.Why-choose-us .container {
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  gap: 60px;
+}
+.Why-choose-us .container .box1 {
+  width: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .Why-choose-us .container .box1 {
+    text-align: left;
+  }
+}
+.Why-choose-us .container .box1 .huvud-text h2 {
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: #F94D1C;
+}
+.Why-choose-us .container .box1 .huvud-text h1 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.Why-choose-us .container .box2 {
+  width: 60%;
+  height: auto;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .Why-choose-us .container .box2 {
+    display: block;
+  }
+}
+.Why-choose-us .container .box2 .over {
+  height: 60%;
+}
+.Why-choose-us .container .box2 .over img {
+  padding-left: 50px;
+  padding-top: 50px;
+}
+.Why-choose-us .container .box2 .under {
+  height: 40%;
+  background: #f0efe9;
+  width: 1157px;
+}
+
 .project-and-case .container .knapp {
   margin: 60px;
   text-align: center;
@@ -666,13 +721,19 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 .project-and-case .container .section-title {
   text-align: center;
+  padding-top: 40px;
+}
+@media (min-width: 1200px) {
+  .project-and-case .container .section-title {
+    padding-top: 90px;
+  }
 }
 .project-and-case .container .project-and-cases {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .project-and-case .container .project-and-cases {
     grid-template-columns: 1fr 1fr;
   }

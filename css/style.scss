@@ -21,7 +21,6 @@ footer{
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
 }
-
 .streck{
     border: 1px solid black;  
     margin-top: 25px;
@@ -757,78 +756,81 @@ header{
         }
     }
 }
-// .Why-choose-us{
+.Why-choose-us{
     
-//     .container{
-//         padding:60px;
-//         display:flex;
-//         justify-content: space-between;
-//         margin-top: 60px;
-//         margin-bottom: 60px;
-//         gap: 60px;
+    .container{
+        padding:60px;
+        display:flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        margin-bottom: 10px;
+        gap: 60px;
         
         
         
-//         .box1{
-//             width: 40%;
-//             height: auto;
-//             .huvud-text{
+        .box1{
+            
+            width: auto;
+            text-align: center;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            @media (min-width:1200px){
+                text-align: left;
+            }
+            .huvud-text{
                 
                 
                 
-//                 h2{
-//                     font-size: 20px;
-//                     padding-bottom: 20px;
-//                     padding-top: 20px;
-//                     color: #F94D1C;
+                h2{
+                    font-size: 20px;
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                    color: #F94D1C;
                     
-//                 }
-//                 h1{
-//                     padding-bottom: 20px;
-//                     padding-top: 20px;
-//                     font-size: 40px;
-//                     font-weight: bold;
-//                 }
-//             }
+                }
+                h1{
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+            }
+
+        }    
+        .box2{
+            width: 60%;
+            height: auto;
+            display:none;
             
+            @media (min-width:1200px){
+                display:block;
+            }
+            .over{
+                
+                height: 60%;
                 
                 
+                img{
+                    
+                    padding-left: 50px;
+                    padding-top: 50px;
+                }
                 
-            
-            
-//         }    
-//         .box2{
-//             width: 60%;
-//             height: auto;
-            
-            
-            
-//             .over{
                 
-//                 height: 60%;
-//                 padding-left: 60px;
-//                 padding-bottom: 60px;
-//                 img{
-//                     margin-left: 30px;
-//                 }
-//             }
-//             .under{
-                
-//                 height:40%;
-//                 width: 3000px;
-//                 background: #f0efe9; 
-                
-//             }
-            
-//         }    
-            
-        
-        
-        
-        
-//     }
+            }
+            .under{
+                height:40%;
+                background: #f0efe9; 
+                width: 1157px;
+
+            }
+
+        }    
+
+    }
     
-// }
+}
 .project-and-case{
     .container{
         .knapp{
@@ -850,6 +852,10 @@ header{
         .section-title{
             
             text-align: center;
+            padding-top: 40px;
+            @media (min-width:1200px){
+                padding-top: 90px;
+            }
         }
         
         .project-and-cases{
@@ -857,7 +863,7 @@ header{
             grid-template-columns: 1fr;
             gap: 30px;
 
-            @media (min-width:768px) {
+            @media (min-width:1200px) {
                 grid-template-columns: 1fr 1fr;
             }
 
