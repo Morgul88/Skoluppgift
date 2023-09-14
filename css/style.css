@@ -16,6 +16,19 @@ footer {
   color: white;
 }
 
+.dots {
+  text-align: center;
+}
+.dots a {
+  padding: 5px;
+}
+.dots a i {
+  color: #C3AB71;
+}
+.dots a i:hover {
+  color: #191919;
+}
+
 .wrapper-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -927,4 +940,14 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 .article-and-news .container .flex-content {
   display: flex;
+}
+
+.Subscribe {
+  background-color: #F0EFE9;
+}
+.Subscribe .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }

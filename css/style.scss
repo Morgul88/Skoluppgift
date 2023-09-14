@@ -15,6 +15,23 @@ footer{
     background-color: #0E1021;
     color: white;
 }
+
+.dots{
+    text-align: center;
+        
+    a{
+        padding:5px;
+        i{
+            color: #C3AB71;
+            &:hover{
+            color: #191919;
+            }
+        }
+            
+    }
+        
+}
+
 .wrapper-grid{
     
     display:grid;
@@ -1083,6 +1100,15 @@ header{
         .flex-content{
             display:flex;
         }
+    }
+}
+.Subscribe{
+    background-color: #F0EFE9;
+    .container{
+        display:flex;
+        justify-content: space-between;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 }
 
