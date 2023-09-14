@@ -230,7 +230,8 @@ header{
         padding-bottom: 90px;
     }
     p{
-        color:#f94d1c
+        color:#f94d1c;
+        font-weight: 700;
     }
     h2{
         color: #191919;
@@ -1072,6 +1073,19 @@ header{
         }   
     }
 }
+.article-and-news{
+    .container{
+        .head-content{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .flex-content{
+            display:flex;
+        }
+    }
+}
+
 
 
 

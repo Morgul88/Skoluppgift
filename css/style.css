@@ -209,6 +209,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 .section-title p {
   color: #f94d1c;
+  font-weight: 700;
 }
 .section-title h2 {
   color: #191919;
@@ -917,4 +918,13 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .testimonial .container .knapp .btn-yellow:hover {
   background-color: white;
   color: #191919;
+}
+
+.article-and-news .container .head-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article-and-news .container .flex-content {
+  display: flex;
 }
