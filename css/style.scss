@@ -966,7 +966,8 @@ header{
     .container{
         
         background-color: white;
-        
+        padding-left: 40px;
+        padding-right: 40px;
         .section-title{
             text-align: center;
             padding-bottom: 30px;
@@ -974,16 +975,17 @@ header{
         .grid-content{
             display:grid;
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr auto;
+            grid-template-rows: auto auto;
             grid-template-areas:     "box1 box3 box5"
                                      "box2 box4 box6";    
             
-            margin:50px 0px 50px 0px;
+            margin:50px 0px 80px 0px;
             .box1{
                 grid-area: box1;
-                padding: 30px;
+                padding: 30px 30px 0px 30px;
                 p{
                     padding:15px;
+                    
                 }
             }
             .box2{
@@ -998,7 +1000,7 @@ header{
             }
             .box3{
                 grid-area: box3;
-                padding: 30px;
+                padding: 30px 30px 0px 30px;
                 p{
                     padding:15px;
                 }
@@ -1015,7 +1017,7 @@ header{
             }
             .box5{
                 grid-area: box5;
-                padding: 30px;
+                padding: 30px 30px 0px 30px;
                 p{
                     padding:15px;
                 }
@@ -1034,7 +1036,11 @@ header{
             
             .liten-box{
                 display:Flex;
-                padding:20px;
+                padding:0px 20px 20px 20px;
+                .small-content h4{
+                    font-size: 22px;
+                    font-weight: 700;
+                }
             }
             
             i{
@@ -1042,7 +1048,7 @@ header{
             }
         }
         .knapp{
-            
+            padding-bottom: 100px;
             margin:60px;
             text-align: center;
             .btn-yellow{
