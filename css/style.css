@@ -707,7 +707,8 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 
 .project-and-case .container .knapp {
-  margin: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   text-align: center;
 }
 .project-and-case .container .knapp .btn-yellow {
@@ -778,10 +779,6 @@ header .container nav a.active:after, header .container nav a:hover::after {
 
 .meet-our-team {
   background-color: #EDCF87;
-}
-.meet-our-team .container {
-  margin-top: 100px;
-  margin-bottom: 100px;
 }
 .meet-our-team .container .head-liner {
   display: flex;
