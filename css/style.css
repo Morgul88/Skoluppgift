@@ -542,17 +542,15 @@ header .container nav a.active:after, header .container nav a:hover::after {
   color: white;
   font-size: 20px;
 }
-.our-services .stor-box .box1 .box1-knapp:hover {
-  background-color: #f9d783;
-  border: 1px solid #ffffff;
-  color: #000000;
+.our-services .stor-box .box1 .box1-knapp a:hover {
+  background-color: #EDCF87;
 }
-.our-services .stor-box .box1 .box1-knapp:hover i {
-  color: #191919;
+.our-services .stor-box .box1:hover {
+  background-color: #EDCF87;
 }
 .our-services .stor-box .box2 {
   width: 25%;
-  background-color: #f9d783;
+  background-color: white;
   padding: 40px;
 }
 .our-services .stor-box .box2 .box2-knapp {
@@ -564,22 +562,18 @@ header .container nav a.active:after, header .container nav a:hover::after {
   align-items: center;
   border-radius: 50%;
   text-align: center;
-  color: #191919;
+  color: white;
   text-decoration: none;
   margin: 0;
   margin-left: auto;
-  background: white;
+  background: #191919;
   border: none;
 }
 .our-services .stor-box .box2 .box2-knapp i {
   font-size: 20px;
 }
-.our-services .stor-box .box2 .box2-knapp:hover {
-  background-color: #191919;
-  color: #ffffff;
-}
-.our-services .stor-box .box2 .box2-knapp:hover i {
-  color: #ffffff;
+.our-services .stor-box .box2:hover {
+  background-color: #EDCF87;
 }
 .our-services .stor-box .box3 {
   width: 25%;
@@ -605,13 +599,8 @@ header .container nav a.active:after, header .container nav a:hover::after {
   color: white;
   font-size: 20px;
 }
-.our-services .stor-box .box3 .box3-knapp:hover {
-  background-color: #f9d783;
-  border: 1px solid #ffffff;
-  color: #000000;
-}
-.our-services .stor-box .box3 .box3-knapp:hover i {
-  color: #191919;
+.our-services .stor-box .box3:hover {
+  background-color: #EDCF87;
 }
 .our-services .stor-box .box4 {
   width: 25%;
@@ -637,13 +626,8 @@ header .container nav a.active:after, header .container nav a:hover::after {
   color: white;
   font-size: 20px;
 }
-.our-services .stor-box .box4 .box4-knapp:hover {
-  background-color: #f9d783;
-  border: 1px solid #ffffff;
-  color: #000000;
-}
-.our-services .stor-box .box4 .box4-knapp:hover i {
-  color: #191919;
+.our-services .stor-box .box4:hover {
+  background-color: #EDCF87;
 }
 @media (min-width: 1200px) {
   .our-services .stor-box {

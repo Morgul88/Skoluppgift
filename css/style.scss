@@ -604,6 +604,8 @@ header{
             width:25%;
             background: white;
             padding: 40px;
+            
+            
 
             .box1-knapp {
                 background-color: #191919;
@@ -620,28 +622,26 @@ header{
                 margin: 0;
                 margin-left: auto;
                 
-                
-
                 i {
                     color: white;
                     font-size: 20px;
                 }
-
-                &:hover {
-                    background-color: #f9d783;
-                    border: 1px solid #ffffff;
-                    color: #000000;
-
-                    i {
-                        color: #191919;
+                a{
+                    &:hover{
+                        background-color: #EDCF87;
                     }
                 }
+
+                
+            }
+            &:hover{
+                background-color: #EDCF87;
             }
         }
 
         .box2 {
             width:25%;
-            background-color: #f9d783;
+            background-color: white;
             padding: 40px;
 
             .box2-knapp {
@@ -653,28 +653,22 @@ header{
                 align-items: center;
                 border-radius: 50%;
                 text-align: center;
-                color: #191919;
+                color: white;
                 text-decoration: none;
                 margin: 0;
                 margin-left: auto;
-                background: white;
+                background: #191919;
                 border: none;
-
                 i {
                     font-size: 20px;
                 }
-
-                &:hover {
-                    background-color: #191919;
-                    color: #ffffff;
-
-                    i {
-                        color: #ffffff;
-                    }
-                }
             }
+            &:hover{
+                background-color: #EDCF87;
+            }
+                
+ 
         }
-
         .box3 {
             width:25%;
             background: white;
@@ -700,17 +694,13 @@ header{
                     font-size: 20px;
                 }
 
-                &:hover {
-                    background-color: #f9d783;
-                    border: 1px solid #ffffff;
-                    color: #000000;
-
-                    i {
-                        color: #191919;
-                    }
-                }
+                
+            }
+            &:hover{
+                background-color: #EDCF87;
             }
         }
+        
 
         .box4 {
             width:25%;
@@ -737,15 +727,10 @@ header{
                     font-size: 20px;
                 }
 
-                &:hover {
-                    background-color: #f9d783;
-                    border: 1px solid #ffffff;
-                    color: #000000;
-
-                    i {
-                        color: #191919;
-                    }
-                }
+                
+            }
+            &:hover{
+                background-color: #EDCF87;
             }
         }
     }
