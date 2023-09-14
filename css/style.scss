@@ -839,7 +839,7 @@ header{
             text-align: center;
             .btn-yellow{
                 padding:20px 30px 20px 30px;
-                
+                border: 1px solid black;;
                 background-color: #191919;
                 color:white;
 
@@ -916,6 +916,8 @@ header{
 .meet-our-team{
     background-color: #EDCF87;
     .container{
+        margin-top: 100px;
+        margin-bottom: 100px;
         .head-liner{
             display:flex;
             justify-content: space-between;
@@ -956,15 +958,33 @@ header{
                 } 
             }
         }
-
+        .dots{
+            text-align: center;
+            
+            a{
+               padding:5px;
+                i{
+                    color: #C3AB71;
+                    &:hover{
+                        color: #191919;
+                    }
+                }
+                
+            }
+            
+        }
+        
     }
 
 }  
 .testimonial{
     background-color: #EDCF87;
-    height: 100vh;
+    display:flex;
+    justify-content: center;
+    
     .container{
-        
+        margin:40px;
+        border: 1px solid black;
         background-color: white;
         padding-left: 40px;
         padding-right: 40px;
@@ -984,7 +1004,7 @@ header{
                 grid-area: box1;
                 padding: 30px 30px 0px 30px;
                 p{
-                    padding:15px;
+                    padding:15px 15px 15px 0px;
                     
                 }
             }
@@ -1002,7 +1022,7 @@ header{
                 grid-area: box3;
                 padding: 30px 30px 0px 30px;
                 p{
-                    padding:15px;
+                    padding:15px 15px 15px 0px;
                 }
             }
             .box4{
@@ -1019,7 +1039,7 @@ header{
                 grid-area: box5;
                 padding: 30px 30px 0px 30px;
                 p{
-                    padding:15px;
+                    padding:15px 15px 15px 0px;
                 }
             }
             .box6{
@@ -1065,7 +1085,7 @@ header{
             }
         }   
     }
-}      
+}
 
 
 

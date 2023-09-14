@@ -712,6 +712,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 .project-and-case .container .knapp .btn-yellow {
   padding: 20px 30px 20px 30px;
+  border: 1px solid black;
   background-color: #191919;
   color: white;
 }
@@ -778,6 +779,10 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .meet-our-team {
   background-color: #EDCF87;
 }
+.meet-our-team .container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 .meet-our-team .container .head-liner {
   display: flex;
   justify-content: space-between;
@@ -818,12 +823,27 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .meet-our-team .container .grid-content .picture-content:hover {
   text-decoration: underline;
 }
+.meet-our-team .container .dots {
+  text-align: center;
+}
+.meet-our-team .container .dots a {
+  padding: 5px;
+}
+.meet-our-team .container .dots a i {
+  color: #C3AB71;
+}
+.meet-our-team .container .dots a i:hover {
+  color: #191919;
+}
 
 .testimonial {
   background-color: #EDCF87;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 .testimonial .container {
+  margin: 40px;
+  border: 1px solid black;
   background-color: white;
   padding-left: 40px;
   padding-right: 40px;
@@ -844,7 +864,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
   padding: 30px 30px 0px 30px;
 }
 .testimonial .container .grid-content .box1 p {
-  padding: 15px;
+  padding: 15px 15px 15px 0px;
 }
 .testimonial .container .grid-content .box2 {
   grid-area: box2;
@@ -861,7 +881,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
   padding: 30px 30px 0px 30px;
 }
 .testimonial .container .grid-content .box3 p {
-  padding: 15px;
+  padding: 15px 15px 15px 0px;
 }
 .testimonial .container .grid-content .box4 {
   grid-area: box4;
@@ -878,7 +898,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
   padding: 30px 30px 0px 30px;
 }
 .testimonial .container .grid-content .box5 p {
-  padding: 15px;
+  padding: 15px 15px 15px 0px;
 }
 .testimonial .container .grid-content .box6 {
   grid-area: box6;
