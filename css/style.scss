@@ -962,11 +962,102 @@ header{
 }  
 .testimonial{
     background-color: #EDCF87;
+    height: 100vh;
     .container{
+        
         background-color: white;
+        
         .section-title{
             text-align: center;
+            padding-bottom: 30px;
         }
+        .grid-content{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr auto;
+            grid-template-areas:     "box1 box3 box5"
+                                     "box2 box4 box6";    
+            
+            margin:50px 0px 50px 0px;
+            .box1{
+                grid-area: box1;
+                padding: 30px;
+                p{
+                    padding:15px;
+                }
+            }
+            .box2{
+                grid-area: box2;
+                img{
+                    padding-right: 15px;
+                }
+                p{
+                    color: #F94D1C;
+                    font-size: 16px;
+                }
+            }
+            .box3{
+                grid-area: box3;
+                padding: 30px;
+                p{
+                    padding:15px;
+                }
+            }
+            .box4{
+                grid-area: box4;
+                img{
+                    padding-right: 15px;
+                }
+                p{
+                    color: #F94D1C;
+                    font-size: 16px;
+                }
+            }
+            .box5{
+                grid-area: box5;
+                padding: 30px;
+                p{
+                    padding:15px;
+                }
+            }
+            .box6{
+                grid-area: box6;
+                p{
+                    color: #F94D1C;
+                    font-size: 16px;
+                    font-family: 'Inter', sans-serif;
+                }
+                img{
+                    padding-right: 15px;
+                }
+            }
+            
+            .liten-box{
+                display:Flex;
+                padding:20px;
+            }
+            
+            i{
+                color: #F94D1C;
+            }
+        }
+        .knapp{
+            
+            margin:60px;
+            text-align: center;
+            .btn-yellow{
+                padding:20px 30px 20px 30px;
+                
+                background-color: #191919;
+                color:white;
+                border: 1px solid black;
+
+                &:hover{
+                    background-color: white;
+                    color: #191919;
+                }
+            }
+        }   
     }
 }      
 

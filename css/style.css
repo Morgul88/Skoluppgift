@@ -821,10 +821,92 @@ header .container nav a.active:after, header .container nav a:hover::after {
 
 .testimonial {
   background-color: #EDCF87;
+  height: 100vh;
 }
 .testimonial .container {
   background-color: white;
 }
 .testimonial .container .section-title {
   text-align: center;
+  padding-bottom: 30px;
+}
+.testimonial .container .grid-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "box1 box3 box5" "box2 box4 box6";
+  margin: 50px 0px 50px 0px;
+}
+.testimonial .container .grid-content .box1 {
+  grid-area: box1;
+  padding: 30px;
+}
+.testimonial .container .grid-content .box1 p {
+  padding: 15px;
+}
+.testimonial .container .grid-content .box2 {
+  grid-area: box2;
+}
+.testimonial .container .grid-content .box2 img {
+  padding-right: 15px;
+}
+.testimonial .container .grid-content .box2 p {
+  color: #F94D1C;
+  font-size: 16px;
+}
+.testimonial .container .grid-content .box3 {
+  grid-area: box3;
+  padding: 30px;
+}
+.testimonial .container .grid-content .box3 p {
+  padding: 15px;
+}
+.testimonial .container .grid-content .box4 {
+  grid-area: box4;
+}
+.testimonial .container .grid-content .box4 img {
+  padding-right: 15px;
+}
+.testimonial .container .grid-content .box4 p {
+  color: #F94D1C;
+  font-size: 16px;
+}
+.testimonial .container .grid-content .box5 {
+  grid-area: box5;
+  padding: 30px;
+}
+.testimonial .container .grid-content .box5 p {
+  padding: 15px;
+}
+.testimonial .container .grid-content .box6 {
+  grid-area: box6;
+}
+.testimonial .container .grid-content .box6 p {
+  color: #F94D1C;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+}
+.testimonial .container .grid-content .box6 img {
+  padding-right: 15px;
+}
+.testimonial .container .grid-content .liten-box {
+  display: Flex;
+  padding: 20px;
+}
+.testimonial .container .grid-content i {
+  color: #F94D1C;
+}
+.testimonial .container .knapp {
+  margin: 60px;
+  text-align: center;
+}
+.testimonial .container .knapp .btn-yellow {
+  padding: 20px 30px 20px 30px;
+  background-color: #191919;
+  color: white;
+  border: 1px solid black;
+}
+.testimonial .container .knapp .btn-yellow:hover {
+  background-color: white;
+  color: #191919;
 }
