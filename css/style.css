@@ -8,12 +8,7 @@ html, body {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
   background-color: #0E1021;
-  color: white;
 }
 
 .dots {
@@ -23,7 +18,7 @@ footer {
   padding: 5px;
 }
 .dots a i {
-  color: #C3AB71;
+  color: #b6b6b6;
 }
 .dots a i:hover {
   color: #191919;
@@ -940,6 +935,19 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 .article-and-news .container .flex-content {
   display: flex;
+  gap: 20px;
+}
+.article-and-news .container .flex-content p {
+  font-size: 16px;
+  padding-top: 10px;
+}
+.article-and-news .container .flex-content h2 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.article-and-news .container .dots {
+  padding-top: 40px;
+  padding-bottom: 0px;
 }
 
 .Subscribe {
@@ -949,5 +957,75 @@ header .container nav a.active:after, header .container nav a:hover::after {
   display: flex;
   justify-content: space-between;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 0px;
+}
+.Subscribe .container h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.Subscribe .container .sub {
+  display: flex;
+  align-items: center;
+}
+.Subscribe .container .sub a {
+  margin-left: 15px;
+}
+.Subscribe .icon {
+  display: flex;
+  justify-content: end;
+}
+
+footer .footer-content {
+  border-bottom: 1px solid #2b2b2b;
+}
+footer .footer-content .container {
+  justify-content: space-around;
+  padding: 80px 0px 80px 0px;
+  display: flex;
+  gap: 40px;
+}
+footer .footer-content .container .logo-content {
+  width: 25%;
+  align-items: center;
+}
+footer .footer-content .container .logo-content p {
+  padding-top: 5px;
+  color: #b6b7bc;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+footer .footer-content .container .links-content {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-content .container .links-content h2 {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+footer .footer-content .container .links-content a {
+  padding-top: 20px;
+  text-decoration: none;
+  color: #b6b7bc;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+footer .copyright-content .container .copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+footer .copyright-content .container .copyright p {
+  color: #b6b7bc;
+}
+footer .copyright-content .container .copyright .socialmedia-bar a {
+  color: white;
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+footer .copyright-content .container .copyright .socialmedia-bar a:hover {
+  color: #666666;
 }

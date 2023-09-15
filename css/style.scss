@@ -8,12 +8,10 @@ html,body{
     font-weight: 400;
 }
 footer{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
+    
+    
     background-color: #0E1021;
-    color: white;
+    
 }
 
 .dots{
@@ -22,7 +20,7 @@ footer{
     a{
         padding:5px;
         i{
-            color: #C3AB71;
+            color: #b6b6b6;
             &:hover{
             color: #191919;
             }
@@ -1092,24 +1090,137 @@ header{
 }
 .article-and-news{
     .container{
+        
         .head-content{
+            
             display:flex;
             justify-content: space-between;
             align-items: center;
         }
         .flex-content{
             display:flex;
+            gap: 20px;
+            p{
+                font-size: 16px;
+                padding-top: 10px;
+            }
+            h2{
+                font-size: 22px;
+                font-weight: 700;
+            }
+            
+            
         }
+        .dots{
+            padding-top: 40px;
+            padding-bottom: 0px;
+        }
+        
     }
 }
 .Subscribe{
     background-color: #F0EFE9;
     .container{
+        
         display:flex;
         justify-content: space-between;
         padding-top: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 0px;
+        h1{
+            font-size: 45px;
+            font-weight: 700;
+            
+        }
+        
+        .sub{
+            
+            display:flex;
+            align-items: center;
+            a{
+                margin-left: 15px;
+            }
+        }
+        
     }
+    .icon{
+        
+        display:flex;
+        justify-content: end;
+
+        
+    }
+}
+footer{
+    .footer-content{
+        border-bottom: 1px solid #2b2b2b;
+        .container{
+        
+            justify-content: space-around;
+            padding:80px 0px 80px 0px;
+            display:flex;
+            gap: 40px;
+            .logo-content{
+                width: 25%;
+                align-items: center;
+                p{
+                    padding-top: 5px;
+                    color: #b6b7bc;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: 'Inter', sans-serif;
+                }
+                
+            }
+            .links-content{
+                
+                display:flex;
+                flex-direction: column;
+                h2{
+                    color: white;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+                a{
+                    padding-top: 20px;
+                    text-decoration: none;
+                    color: #b6b7bc;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: 'Inter', sans-serif;
+                }
+                .links-content .company{
+    
+                }
+            }
+        }
+
+    }
+    .copyright-content{
+        .container{
+            .copyright{
+                display:flex;
+                justify-content: space-between;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                p{
+                    color: #b6b7bc;
+                }
+                .socialmedia-bar{
+                    a{
+                        color: white;
+                        font-size: 1.3rem;
+                        margin-left: 10px;
+                            
+                        &:hover {
+                         color: #666666;
+                        }
+                    }    
+                }
+            }
+        }
+    }
+    
+    
 }
 
 
