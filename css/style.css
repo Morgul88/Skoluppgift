@@ -946,8 +946,8 @@ header .container nav a.active:after, header .container nav a:hover::after {
   font-weight: 700;
 }
 .article-and-news .container .dots {
-  padding-top: 40px;
-  padding-bottom: 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .Subscribe {
@@ -969,6 +969,18 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 .Subscribe .container .sub a {
   margin-left: 15px;
+}
+.Subscribe .container .sub .sub-button {
+  background-color: white;
+  border: 1px solid white;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+.Subscribe .container .sub .sub-button .input-content {
+  border: none;
 }
 .Subscribe .icon {
   display: flex;

@@ -1112,8 +1112,8 @@ header{
             
         }
         .dots{
-            padding-top: 40px;
-            padding-bottom: 0px;
+            padding-top: 80px;
+            padding-bottom: 80px;
         }
         
     }
@@ -1138,6 +1138,19 @@ header{
             align-items: center;
             a{
                 margin-left: 15px;
+            }
+            .sub-button{
+                background-color: white;
+                border: 1px solid white;
+                color: #191919;
+                text-decoration: none;  
+                padding: 12px 25px;
+                border-radius: 25px;
+                font-weight: 600;
+                .input-content{
+                    border: none;
+
+                }
             }
         }
         
