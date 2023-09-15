@@ -1041,3 +1041,117 @@ footer .copyright-content .container .copyright .socialmedia-bar a {
 footer .copyright-content .container .copyright .socialmedia-bar a:hover {
   color: #666666;
 }
+
+.Lets-connect {
+  background-color: #F0EFE9;
+}
+.Lets-connect .container {
+  text-align: center;
+}
+.Lets-connect .container nav {
+  padding: 40px;
+}
+.Lets-connect .container nav a {
+  display: inline-block;
+  color: #191919;
+  text-decoration: none;
+  margin-right: 35px;
+  position: relative;
+}
+.Lets-connect .container nav a.active {
+  font-weight: 500;
+}
+.Lets-connect .container nav a.active:after, .Lets-connect .container nav a:hover::after {
+  content: "";
+  position: absolute;
+  font-weight: 500;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
+}
+.Lets-connect .container h1 {
+  padding: 0px 0px 40px 0px;
+  color: #191919;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.leave-message .container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.leave-message .container .box1 {
+  color: #191919;
+  text-decoration: none;
+  padding: 40px;
+  border: 2px solid rgb(231, 231, 231);
+  display: flex;
+}
+.leave-message .container .box1 .content {
+  padding-left: 20px;
+}
+.leave-message .container .box1 .content p {
+  margin: 0;
+}
+.leave-message .container .box1 .rund-ruta {
+  width: 60px;
+  height: 60px;
+  background-color: #191919;
+  border: 1px solid black;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.leave-message .container .box1 .rund-ruta .icon {
+  font-size: 30px;
+  color: white;
+}
+.leave-message .container .box1:hover {
+  background-color: #F0EFE9;
+  border: none;
+}
+
+.leave-message-card .container {
+  background-color: #F0EFE9;
+  text-align: center;
+  padding: 0px 100px 80px 100px;
+}
+.leave-message-card .container h1 {
+  padding-top: 120px;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+.leave-message-card .container .sub {
+  display: flex;
+  flex-direction: column;
+}
+.leave-message-card .container .sub a {
+  margin-left: 15px;
+}
+.leave-message-card .container .sub .sub-button {
+  background-color: white;
+  border: 1px solid white;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  margin: 10px;
+}
+.leave-message-card .container .sub .sub-button .input-content {
+  border: none;
+}
+
+.map {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}

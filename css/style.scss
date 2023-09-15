@@ -1234,8 +1234,137 @@ footer{
     }
     
     
+
 }
 
+// Här börjar contract
+
+.Lets-connect{
+    background-color: #F0EFE9;
+    .container{
+        text-align: center;
+        nav{
+            padding: 40px;
+            a{
+                display:inline-block;
+                color: #191919;
+                text-decoration: none;
+                margin-right: 35px;
+                position: relative;
+
+                &.active {
+                    font-weight: 500;
+                }
+                &.active:after,
+                &:hover::after {
+                    content: '';
+                    position: absolute;
+                    font-weight: 500;
+                    height: 2px;
+                    width: 15px;
+                    background-color: #191919;
+                    left: 50%;
+                    bottom: -3px;
+                    transform:translate((calc(50% - 15px)));
+
+                }
+            }
+        }
+        h1{
+            padding:0px 0px 40px 0px;
+            color: #191919;
+            font-family: 'DM Sans';
+            font-weight: 700;
+            font-size: 45px;
+        }
+    }
+}
+.leave-message{
+    .container{
+        display:flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        .box1{
+            color: #191919;
+            text-decoration: none;
+            padding:40px;
+            border: 2px solid rgb(231, 231, 231);
+            display:flex;
+            .content{
+                padding-left: 20px;
+                p{
+                    margin: 0;
+                }
+            }
+            .rund-ruta {
+                width: 60px;
+                height: 60px;
+                background-color: #191919;
+                border: 1px solid black;
+                border-radius: 50%;
+                align-items: center;
+                justify-content: center;
+                display:flex;
+                .icon{
+                    font-size: 30px;
+                    color: white;
+                    
+                }
+                
+            }
+            &:hover{
+                background-color: #F0EFE9;
+                border: none;
+            }
+        }
+        
+    }
+}
+.leave-message-card{
+    .container{
+        background-color: #F0EFE9;
+        text-align: center;
+        padding:0px 100px 80px 100px;
+        
+        
+        h1{
+            padding-top: 120px;
+            padding-bottom: 30px;
+            font-weight: 700;
+        }
+        .sub{
+            display:flex;
+            flex-direction: column;
+            
+            a{
+                margin-left: 15px;
+            }
+            .sub-button{
+                background-color: white;
+                border: 1px solid white;
+                color: #191919;
+                text-decoration: none;  
+                padding: 12px 25px;
+                border-radius: 25px;
+                font-weight: 600;
+                margin: 10px;
+                
+                .input-content{
+                    border: none;
+    
+                }
+            }
+        }  
+    }
+}
+.map{
+    padding-top: 100px;
+    
+    display:flex;
+    justify-content: center;
+}
 
 
 
