@@ -372,19 +372,20 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 
 .about-company .container {
+  text-align: center;
   padding: 10px;
   gap: 150px;
-  display: flex;
+  display: block;
   justify-content: center;
   position: relative;
 }
-.about-company .container .left-content {
-  display: none;
-}
 @media (min-width: 1200px) {
-  .about-company .container .left-content {
-    display: block;
+  .about-company .container {
+    display: flex;
   }
+}
+.about-company .container .left-content {
+  padding-bottom: 40px;
 }
 .about-company .container .left-content .blue-box {
   position: absolute;
@@ -393,6 +394,12 @@ header .container nav a.active:after, header .container nav a:hover::after {
   top: 58%;
   color: #0E1021;
   background-color: #BEEBFF;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .about-company .container .left-content .blue-box {
+    display: block;
+  }
 }
 .about-company .container .left-content .blue-box h2 {
   color: #191919;
@@ -406,6 +413,12 @@ header .container nav a.active:after, header .container nav a:hover::after {
   position: absolute;
   left: 25px;
   top: 120px;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .about-company .container .left-content .white-box {
+    display: block;
+  }
 }
 .about-company .content {
   padding: 20px;
@@ -984,13 +997,30 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 
 .article-and-news .container .head-content {
-  display: flex;
+  text-align: center;
+  display: block;
   justify-content: space-between;
   align-items: center;
 }
+@media (min-width: 1200px) {
+  .article-and-news .container .head-content {
+    display: flex;
+  }
+}
+.article-and-news .container .head-content .knapp {
+  padding-bottom: 60px;
+}
 .article-and-news .container .flex-content {
+  text-align: center;
+  flex-direction: column;
   display: flex;
   gap: 20px;
+}
+@media (min-width: 1200px) {
+  .article-and-news .container .flex-content {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .article-and-news .container .flex-content p {
   font-size: 16px;
@@ -1012,21 +1042,46 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .Subscribe .container {
   padding-top: 80px;
   padding-bottom: 80px;
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .Subscribe .container {
+    display: flex;
+  }
+}
+@media (min-width: 1500px) {
+  .Subscribe .container {
+    justify-content: space-between;
+  }
 }
 .Subscribe .container h1 {
   font-size: 45px;
   font-weight: 700;
+  margin-right: 10px;
+  text-align: center;
 }
 .Subscribe .container .sub {
+  padding: 10px;
+  justify-content: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .Subscribe .container .sub {
+    flex-direction: row;
+  }
 }
 .Subscribe .container .sub a {
   margin-left: 15px;
 }
+.Subscribe .container .sub .btn-yellow {
+  margin-top: 10px;
+}
 .Subscribe .container .sub .sub-button {
+  padding: 10px;
   background-color: white;
   border: 1px solid white;
   color: #191919;
@@ -1039,9 +1094,15 @@ header .container nav a.active:after, header .container nav a:hover::after {
   border: none;
 }
 .Subscribe .container .icon {
-  position: absolute;
+  display: none;
   right: 0;
   bottom: 50px;
+}
+@media (min-width: 1200px) {
+  .Subscribe .container .icon {
+    display: block;
+    position: absolute;
+  }
 }
 
 footer .footer-content {
@@ -1050,12 +1111,30 @@ footer .footer-content {
 footer .footer-content .container {
   justify-content: space-around;
   padding: 80px 0px 80px 0px;
-  display: flex;
+  display: block;
   gap: 40px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  footer .footer-content .container {
+    display: flex;
+    align-items: baseline;
+    text-align: start;
+    align-items: center;
+    text-align: center;
+  }
 }
 footer .footer-content .container .logo-content {
+  text-align: center;
   width: 25%;
-  align-items: center;
+}
+@media (min-width: 1200px) {
+  footer .footer-content .container .logo-content {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
 }
 footer .footer-content .container .logo-content p {
   padding-top: 5px;

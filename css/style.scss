@@ -437,18 +437,19 @@ header{
 .about-company{
 
     .container{
-        
+        text-align: center;
         padding:10px;
         gap:150px;
-        display:flex;
+        display:block;
         justify-content: center;
         position: relative;
+        @media (min-width:1200px){
+            display:flex;
+        }
+        
         
         .left-content{
-            display:none;
-            @media(min-width:1200px){
-                display:block;
-            }
+            padding-bottom: 40px;
             
             .blue-box{
                 
@@ -459,7 +460,11 @@ header{
                 top: 58%;
                 color: #0E1021;
                 background-color: #BEEBFF;
+                display:none;
+                @media(min-width:1200px){
+                display:block;
                 
+                }
                 
                 
                 h2{
@@ -476,7 +481,10 @@ header{
                 position: absolute;
                 left: 25px;
                 top: 120px;
-                
+                display:none;
+                @media(min-width:1200px){
+                display:block;
+                }
             }
         }
 
@@ -1150,14 +1158,29 @@ header{
     .container{
         
         .head-content{
-            
-            display:flex;
+            text-align: center;
+            display:block;
             justify-content: space-between;
             align-items: center;
+            @media (min-width:1200px){
+                display:flex;
+            }
+            .knapp{
+                
+                padding-bottom: 60px;
+            }
         }
         .flex-content{
+            text-align: center;
+            flex-direction: column;
             display:flex;
             gap: 20px;
+            @media (min-width:1200px){
+                display:flex;
+                flex-direction: row;
+
+               
+            }
             p{
                 font-size: 16px;
                 padding-top: 10px;
@@ -1185,22 +1208,40 @@ header{
         
         padding-top: 80px;
         padding-bottom: 80px;
-        display:flex;
-        justify-content: space-between;
+        display:block;
+        align-items: center;
+        @media(min-width:1200px){
+            display:flex;
+        }
+        
+        @media (min-width:1500px){
+            justify-content: space-between;
+        }
         h1{
             font-size: 45px;
             font-weight: 700;
-            
+            margin-right: 10px;
+            text-align: center;
         }
         
         .sub{
-            
+            padding:10px;
+            justify-content: center;
             display:flex;
+            flex-direction: column;
             align-items: center;
+            text-align: center;
+            @media (min-width:1200px){
+                flex-direction: row;
+            }
             a{
                 margin-left: 15px;
             }
+            .btn-yellow{
+                margin-top: 10px;
+            }
             .sub-button{
+                padding: 10px;
                 background-color: white;
                 border: 1px solid white;
                 color: #191919;
@@ -1208,6 +1249,7 @@ header{
                 padding: 12px 25px;
                 border-radius: 25px;
                 font-weight: 600;
+
                 .input-content{
                     border: none;
 
@@ -1216,9 +1258,14 @@ header{
         }
         .icon{
             
-            position: absolute;
+            display:none;
             right:0;
             bottom: 50px;
+            @media(min-width:1200px){
+                display:block;
+                position: absolute;
+            }
+
         }
         
     }
@@ -1229,14 +1276,29 @@ footer{
     .footer-content{
         border-bottom: 1px solid #2b2b2b;
         .container{
-        
+            
             justify-content: space-around;
             padding:80px 0px 80px 0px;
-            display:flex;
+            display:block;
             gap: 40px;
-            .logo-content{
-                width: 25%;
+            text-align: center;
+            @media (min-width:1200px){
+                display:flex;
+                align-items: baseline;
+                text-align: start;
                 align-items: center;
+                text-align: center;
+            }
+            .logo-content{
+                text-align: center;
+                width: 25%;
+                @media (min-width:1200px){
+                    width: 100%;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                }
+                
                 p{
                     padding-top: 5px;
                     color: #b6b7bc;
