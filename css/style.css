@@ -678,6 +678,9 @@ header .container nav a.active:after, header .container nav a:hover::after {
   }
 }
 
+.Why-choose-us {
+  position: relative;
+}
 .Why-choose-us .container {
   padding: 60px;
   display: flex;
@@ -727,10 +730,14 @@ header .container nav a.active:after, header .container nav a:hover::after {
   padding-left: 50px;
   padding-top: 50px;
 }
-.Why-choose-us .container .box2 .under {
-  height: 40%;
+.Why-choose-us .under {
+  height: 425px;
+  width: 100%;
   background: #f0efe9;
-  width: 1157px;
+  z-index: -1;
+  position: absolute;
+  left: 45%;
+  top: 275px;
 }
 
 .project-and-case .container .knapp {
