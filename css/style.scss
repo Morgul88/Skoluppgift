@@ -443,45 +443,40 @@ header{
         display:flex;
         justify-content: center;
         position: relative;
-        .bild{
-            
-            img{
-                display:none;
-                @media (min-width:1200px){
-                    
-                        display:block;
-                        
-                    }
-            }
-            
-        }
-        .blue-box{
-            background-color: #BEEBFF;
-            padding: 30px;
-            position: absolute;
-            left: 10px;
-            top: 58%;
-            color: #0E1021;
+        
+        .left-content{
             display:none;
-            @media (min-width:1200px){
+            @media(min-width:1200px){
                 display:block;
             }
-            h2{
-                color: #191919;
-                font-size: 20px;
-                font-weight: 700;
+            
+            .blue-box{
+                
+                
+                position: absolute;
+                padding: 30px;
+                left: 10px;
+                top: 58%;
+                color: #0E1021;
+                background-color: #BEEBFF;
+                
+                
+                
+                h2{
+                    color: #191919;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                span{
+                    color: #F94D1C;
+                }
             }
-            span{
-                color: #F94D1C;
-            }
-        }
-        .white-box{
-            position: absolute;
-            left: 25px;
-            top: 120px;
-            display:none;
-            @media (min-width:1200px){
-                display:block;
+            .white-box{
+                
+                position: absolute;
+                left: 25px;
+                top: 120px;
+                
             }
         }
 
@@ -795,25 +790,27 @@ header{
 .Why-choose-us{
     position: relative;
     
+    
     .container{
-        padding:60px;
+        
         display:flex;
-        justify-content: space-between;
+        justify-content: center;
         margin-top: 60px;
         margin-bottom: 10px;
-        gap: 60px;
+        gap: 100px;
+        
         
         
         
         .box1{
-            
+            text-align: left;
             width: auto;
             text-align: center;
             display:flex;
             flex-direction: column;
             justify-content: center;
             @media (min-width:1200px){
-                text-align: left;
+                text-align: center;
             }
             .huvud-text{
                 
@@ -836,43 +833,28 @@ header{
 
         }    
         .box2{
-            
-            width: 60%;
-            height: auto;
             display:none;
-            
             @media (min-width:1200px){
                 display:block;
-            }
-            .over{
-                
-                height: 60%;
-                
-                
-                img{
-                    
-                    padding-left: 50px;
-                    padding-top: 50px;
-                }
                 
                 
             }
             
 
-        }    
+            .under{
+                height: 425px;
+                width: 52%;
+                background: #f0efe9; 
+                right: 0;
+                bottom: 60px;
+                position: absolute;
+                z-index: -1;
+                
+            }
+        }
 
     }
-    .under{
-        height: 425px;
-        width: 100%;
-        background: #f0efe9; 
-        z-index: -1;
-        
-        position: absolute; 
-        left:45%;
-        top: 275px;
-
-    }
+    
 }
 
 .project-and-case{
@@ -964,26 +946,42 @@ header{
     .container{
         
         .head-liner{
-            display:flex;
-            justify-content: space-between;
+            display:block;
+            justify-content: center;
             align-items: center;
+            text-align: center;
+            @media (min-width:1200px){
+                display:flex;
+                justify-content: space-between;
+            }
         }
-        .knapp .btn-yellow{
-            border: 1px solid black;
-            padding: 20px 40px 20px 40px;
+        .knapp{
+            padding-bottom: 50px;
+            .btn-yellow{
+                border: 1px solid black;
+                padding: 20px 40px 20px 40px;
+            }
+        
         }
         .section-title{
             padding:80px 0px 80px 0px;
         }
         .grid-content{
             display:grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: 30px;
-            row-gap: 20px;
+            text-align: center;
+            
+            grid-template-columns: 1fr;
+            
+            @media (min-width:1200px){
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                column-gap: 30px;
+                row-gap: 20px;
+            }
             .picture-content{
-                padding-bottom: 60px;
+                padding-bottom: 30px;
                 text-decoration: none;
                 color: #191919;
+                
                 img{
                     padding-bottom: 30px;
                 }
@@ -1005,7 +1003,7 @@ header{
         }
         .dots{
             text-align: center;
-            
+            padding-bottom: 50px;
             a{
                padding:5px;
                 i{
@@ -1038,22 +1036,32 @@ header{
             padding-bottom: 30px;
         }
         .grid-content{
-            display:grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: auto auto;
-            grid-template-areas:     "box1 box3 box5"
-                                     "box2 box4 box6";    
             
             margin:50px 0px 80px 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            @media (min-width:1200px){
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto auto;
+                grid-template-areas:     "box1 box3 box5"
+                                     "box2 box4 box6";    
+            }
             .box1{
+                border-top: 1px solid rgb(182, 182, 182);
                 grid-area: box1;
                 padding: 30px 30px 0px 30px;
                 p{
                     padding:15px 15px 15px 0px;
                     
                 }
+                
             }
             .box2{
+                
                 grid-area: box2;
                 img{
                     padding-right: 15px;
@@ -1064,6 +1072,7 @@ header{
                 }
             }
             .box3{
+                border-top: 1px solid rgb(182, 182, 182);
                 grid-area: box3;
                 padding: 30px 30px 0px 30px;
                 p{
@@ -1081,6 +1090,7 @@ header{
                 }
             }
             .box5{
+                border-top: 1px solid rgb(182, 182, 182);
                 grid-area: box5;
                 padding: 30px 30px 0px 30px;
                 p{
@@ -1088,6 +1098,7 @@ header{
                 }
             }
             .box6{
+                
                 grid-area: box6;
                 p{
                     color: #F94D1C;
@@ -1116,6 +1127,10 @@ header{
             padding-bottom: 100px;
             margin:60px;
             text-align: center;
+            display:none;
+            @media (min-width:1200px){
+                display:block;
+            }
             .btn-yellow{
                 padding:20px 30px 20px 30px;
                 
@@ -1248,9 +1263,7 @@ footer{
                     font-weight: 400;
                     font-family: 'Inter', sans-serif;
                 }
-                .links-content .company{
-    
-                }
+                
             }
         }
 
@@ -1284,7 +1297,7 @@ footer{
 
 }
 
-// Här börjar contract
+Här börjar contract
 
 .Lets-connect{
     background-color: #F0EFE9;
