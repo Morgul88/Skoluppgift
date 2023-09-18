@@ -375,12 +375,46 @@ header .container nav a.active:after, header .container nav a:hover::after {
   gap: 150px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
-.about-company .container img {
+.about-company .container .bild img {
   display: none;
 }
 @media (min-width: 1200px) {
-  .about-company .container img {
+  .about-company .container .bild img {
+    display: block;
+  }
+}
+.about-company .container .blue-box {
+  background-color: #BEEBFF;
+  padding: 30px;
+  position: absolute;
+  left: 10px;
+  top: 58%;
+  color: #0E1021;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .about-company .container .blue-box {
+    display: block;
+  }
+}
+.about-company .container .blue-box h2 {
+  color: #191919;
+  font-size: 20px;
+  font-weight: 700;
+}
+.about-company .container .blue-box span {
+  color: #F94D1C;
+}
+.about-company .container .white-box {
+  position: absolute;
+  left: 25px;
+  top: 120px;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .about-company .container .white-box {
     display: block;
   }
 }
@@ -952,12 +986,13 @@ header .container nav a.active:after, header .container nav a:hover::after {
 
 .Subscribe {
   background-color: #F0EFE9;
+  position: relative;
 }
 .Subscribe .container {
+  padding-top: 80px;
+  padding-bottom: 80px;
   display: flex;
   justify-content: space-between;
-  padding-top: 80px;
-  padding-bottom: 0px;
 }
 .Subscribe .container h1 {
   font-size: 45px;
@@ -982,9 +1017,10 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .Subscribe .container .sub .sub-button .input-content {
   border: none;
 }
-.Subscribe .icon {
-  display: flex;
-  justify-content: end;
+.Subscribe .container .icon {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
 }
 
 footer .footer-content {

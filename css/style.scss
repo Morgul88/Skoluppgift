@@ -442,20 +442,55 @@ header{
         gap:150px;
         display:flex;
         justify-content: center;
-
-        
-        img{
+        position: relative;
+        .bild{
+            
+            img{
+                display:none;
+                @media (min-width:1200px){
+                    
+                        display:block;
+                        
+                    }
+            }
+            
+        }
+        .blue-box{
+            background-color: #BEEBFF;
+            padding: 30px;
+            position: absolute;
+            left: 10px;
+            top: 58%;
+            color: #0E1021;
             display:none;
             @media (min-width:1200px){
-                
-                    display:block;
-                    
-                }
+                display:block;
+            }
+            h2{
+                color: #191919;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            span{
+                color: #F94D1C;
+            }
         }
+        .white-box{
+            position: absolute;
+            left: 25px;
+            top: 120px;
+            display:none;
+            @media (min-width:1200px){
+                display:block;
+            }
+        }
+
+        
         
         
         }
         .content{
+            
             padding:20px;
             display:flex;
             flex-direction: column;
@@ -1120,12 +1155,15 @@ header{
 }
 .Subscribe{
     background-color: #F0EFE9;
+    
+    position: relative;
+    
     .container{
         
+        padding-top: 80px;
+        padding-bottom: 80px;
         display:flex;
         justify-content: space-between;
-        padding-top: 80px;
-        padding-bottom: 0px;
         h1{
             font-size: 45px;
             font-weight: 700;
@@ -1153,16 +1191,17 @@ header{
                 }
             }
         }
+        .icon{
+            
+            position: absolute;
+            right:0;
+            bottom: 50px;
+        }
         
     }
-    .icon{
-        
-        display:flex;
-        justify-content: end;
-
-        
-    }
+    
 }
+
 footer{
     .footer-content{
         border-bottom: 1px solid #2b2b2b;
