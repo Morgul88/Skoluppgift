@@ -1320,7 +1320,9 @@ footer{
                 .logo-content{
                         margin-right: 50px;
                         width: 100%;
+                        
                         @media(min-width:1200px){
+                            text-align: left;
                             width: 25%;
                         }
                     
@@ -1400,9 +1402,6 @@ footer{
     
 
 }
-
-Här börjar contract
-
 .Lets-connect{
     background-color: #F0EFE9;
     .container{
