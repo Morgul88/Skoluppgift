@@ -1253,11 +1253,17 @@ footer .copyright-content .container .copyright .socialmedia-bar a:hover {
 }
 
 .leave-message .container {
-  display: flex;
+  display: block;
+  text-align: center;
   justify-content: center;
   gap: 20px;
   padding-top: 80px;
   padding-bottom: 80px;
+}
+@media (min-width: 1200px) {
+  .leave-message .container {
+    display: flex;
+  }
 }
 .leave-message .container .box1 {
   color: #191919;
@@ -1265,6 +1271,8 @@ footer .copyright-content .container .copyright .socialmedia-bar a:hover {
   padding: 40px;
   border: 2px solid rgb(231, 231, 231);
   display: flex;
+  justify-content: center;
+  margin: 20px;
 }
 .leave-message .container .box1 .content {
   padding-left: 20px;
@@ -1320,10 +1328,18 @@ footer .copyright-content .container .copyright .socialmedia-bar a:hover {
 }
 .leave-message-card .container .sub .sub-button .input-content {
   border: none;
+  text-align: left;
+  width: 100%;
 }
 
 .map {
   padding-top: 100px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  width: auto;
+  display: none;
+}
+@media (min-width: 1600px) {
+  .map {
+    display: block;
+  }
 }
