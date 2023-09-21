@@ -228,11 +228,21 @@ header .container nav a.active:after, header .container nav a:hover::after {
 
 .showcase {
   background-color: #F0EFE9;
+  position: relative;
+  z-index: 0;
+}
+.showcase .waves {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 80%;
 }
 .showcase .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 .showcase .container .content {
   justify-content: center;
@@ -288,13 +298,13 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 
 .logo .container {
-  display: none;
-  justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  text-align: center;
+}
+.logo .container .icons-content {
+  display: block;
 }
 @media (min-width: 1200px) {
-  .logo .container {
+  .logo .container .icons-content {
     display: flex;
   }
 }
@@ -386,38 +396,29 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .about-company .container .left-content {
   padding-bottom: 40px;
 }
-.about-company .container .left-content .blue-box {
+.about-company .container .left-content .bild {
+  position: relative;
+}
+.about-company .container .left-content .bild .blue-box {
+  top: 400px;
+  left: 10px;
   position: absolute;
   padding: 30px;
-  left: 10px;
-  top: 58%;
   color: #0E1021;
   background-color: #BEEBFF;
-  display: none;
 }
-@media (min-width: 1200px) {
-  .about-company .container .left-content .blue-box {
-    display: block;
-  }
-}
-.about-company .container .left-content .blue-box h2 {
+.about-company .container .left-content .bild .blue-box h2 {
   color: #191919;
   font-size: 20px;
   font-weight: 700;
 }
-.about-company .container .left-content .blue-box span {
+.about-company .container .left-content .bild .blue-box span {
   color: #F94D1C;
 }
-.about-company .container .left-content .white-box {
+.about-company .container .left-content .bild .white-box {
   position: absolute;
-  left: 25px;
-  top: 120px;
-  display: none;
-}
-@media (min-width: 1200px) {
-  .about-company .container .left-content .white-box {
-    display: block;
-  }
+  top: 20px;
+  left: 0px;
 }
 .about-company .content {
   padding: 20px;
@@ -1068,14 +1069,16 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .Subscribe {
   background-color: #F0EFE9;
   position: relative;
+  z-index: 0;
 }
 .Subscribe .container {
+  z-index: 1;
   padding-top: 80px;
   padding-bottom: 80px;
   display: block;
   align-items: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1403px) {
   .Subscribe .container {
     display: flex;
   }
@@ -1124,19 +1127,23 @@ header .container nav a.active:after, header .container nav a:hover::after {
   border: none;
 }
 .Subscribe .container .icon {
-  display: none;
   right: 0;
   bottom: 50px;
-}
-@media (min-width: 1200px) {
-  .Subscribe .container .icon {
-    display: block;
-    position: absolute;
-  }
+  z-index: -1;
+  position: absolute;
 }
 
 footer .footer-content {
   border-bottom: 1px solid #2b2b2b;
+  position: relative;
+  z-index: 0;
+}
+footer .footer-content .right-wave {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
 }
 footer .footer-content .container .flex-content {
   text-align: center;
@@ -1321,15 +1328,16 @@ footer .copyright-content .container .copyright .socialmedia-bar a:hover {
   border: 1px solid white;
   color: #191919;
   text-decoration: none;
-  padding: 12px 25px;
   border-radius: 25px;
   font-weight: 600;
   margin: 10px;
+  padding: 12px 25px;
 }
 .leave-message-card .container .sub .sub-button .input-content {
   border: none;
   text-align: left;
   width: 100%;
+  outline: none;
 }
 
 .map {
