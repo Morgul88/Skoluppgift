@@ -459,22 +459,33 @@ header{
         
         .left-content{
             
-            
+            .women{
+                width: 100%;
+            }
             padding-bottom: 40px;
             position: relative;
             .blue-box{
+                
                 bottom: 100px;
                 left: -20px;
                 position: absolute;
                 padding: 30px;
                 color: #0E1021;
-                background-color: #BEEBFF;
                 
+                @media(min-width:560px){
+                    background-color: #BEEBFF;
+                    
+                }
                 
                 h2{
-                    color: #191919;
+                    
+                    color: white;
                     font-size: 20px;
                     font-weight: 700;
+                    @media(min-width:560px){
+                        color: #191919;
+                        
+                    }
                 }
                 span{
                     color: #F94D1C;
@@ -484,10 +495,13 @@ header{
                 position: absolute;
                 left: -20px;
                 top: 30px;
-            }
-            .women{
+                display:none;
+                @media(min-width:560px){
+                    display:block;
+                }
                 
             }
+            
             
         }
 
@@ -1219,10 +1233,15 @@ header{
                 flex-direction: row;
             }
             .box1{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
                 
                 position: relative;
                 z-index: 0;
                 .image{
+                    
                     position: relative;
                     
                     .date{
