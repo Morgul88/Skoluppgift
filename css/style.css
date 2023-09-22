@@ -328,18 +328,19 @@ header .container nav a.active:after, header .container nav a:hover::after {
   display: flex;
   flex-direction: column;
   margin: 10px;
+  justify-content: center;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .features .container .content-lada {
+    text-align: left;
+  }
 }
 .features .container .content-lada h5 {
   font-size: 45px;
   font-weight: bold;
   font-family: "DM Sans", sans-serif;
   color: #191919;
-  text-align: center;
-}
-@media (min-width: 376px) {
-  .features .container .content-lada h5 {
-    text-align: start;
-  }
 }
 .features .container .content-lada .long {
   margin-left: auto;
@@ -381,12 +382,10 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 
 .about-company .container {
-  text-align: center;
   padding: 10px;
   gap: 150px;
   display: block;
-  justify-content: center;
-  position: relative;
+  margin: 0 auto;
 }
 @media (min-width: 1200px) {
   .about-company .container {
@@ -395,30 +394,28 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 .about-company .container .left-content {
   padding-bottom: 40px;
-}
-.about-company .container .left-content .bild {
   position: relative;
 }
-.about-company .container .left-content .bild .blue-box {
-  top: 400px;
-  left: 10px;
+.about-company .container .left-content .blue-box {
+  bottom: 100px;
+  left: -20px;
   position: absolute;
   padding: 30px;
   color: #0E1021;
   background-color: #BEEBFF;
 }
-.about-company .container .left-content .bild .blue-box h2 {
+.about-company .container .left-content .blue-box h2 {
   color: #191919;
   font-size: 20px;
   font-weight: 700;
 }
-.about-company .container .left-content .bild .blue-box span {
+.about-company .container .left-content .blue-box span {
   color: #F94D1C;
 }
-.about-company .container .left-content .bild .white-box {
+.about-company .container .left-content .white-box {
   position: absolute;
-  top: 20px;
-  left: 0px;
+  left: -20px;
+  top: 30px;
 }
 .about-company .content {
   padding: 20px;
@@ -1042,6 +1039,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
   padding-bottom: 60px;
 }
 .article-and-news .container .flex-content {
+  position: relative;
   text-align: center;
   flex-direction: column;
   display: flex;
@@ -1053,15 +1051,41 @@ header .container nav a.active:after, header .container nav a:hover::after {
     flex-direction: row;
   }
 }
+.article-and-news .container .flex-content .box1 {
+  position: relative;
+  z-index: 0;
+}
+.article-and-news .container .flex-content .box1 .image {
+  position: relative;
+}
+.article-and-news .container .flex-content .box1 .image .date {
+  text-align: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: #f0d596;
+  padding-top: 4px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+.article-and-news .container .flex-content .box1 .image .date .month {
+  margin: 0px;
+  padding: 0px;
+}
+.article-and-news .container .flex-content .box1 .image .date h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
 .article-and-news .container .flex-content p {
   font-size: 16px;
-  padding-top: 10px;
 }
 .article-and-news .container .flex-content h2 {
   font-size: 22px;
   font-weight: 700;
 }
-.article-and-news .container .dots {
+.article-and-news .container .flex-content .dots {
   padding-top: 80px;
   padding-bottom: 80px;
 }
@@ -1070,6 +1094,12 @@ header .container nav a.active:after, header .container nav a:hover::after {
   background-color: #F0EFE9;
   position: relative;
   z-index: 0;
+}
+.Subscribe .icon {
+  right: 0;
+  bottom: 50px;
+  z-index: -1;
+  position: absolute;
 }
 .Subscribe .container {
   z-index: 1;
@@ -1100,7 +1130,6 @@ header .container nav a.active:after, header .container nav a:hover::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 @media (min-width: 1200px) {
   .Subscribe .container .sub {
@@ -1110,10 +1139,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .Subscribe .container .sub a {
   margin-left: 15px;
 }
-.Subscribe .container .sub .btn-yellow {
-  margin-top: 10px;
-}
-.Subscribe .container .sub .sub-button {
+.Subscribe .container .sub .input-content {
   padding: 10px;
   background-color: white;
   border: 1px solid white;
@@ -1122,15 +1148,10 @@ header .container nav a.active:after, header .container nav a:hover::after {
   padding: 12px 25px;
   border-radius: 25px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
-.Subscribe .container .sub .sub-button .input-content {
-  border: none;
-}
-.Subscribe .container .icon {
-  right: 0;
-  bottom: 50px;
-  z-index: -1;
-  position: absolute;
+.Subscribe .container .sub .btn-yellow {
+  margin-bottom: 10px;
 }
 
 footer .footer-content {

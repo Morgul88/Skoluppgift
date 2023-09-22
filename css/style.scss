@@ -376,16 +376,19 @@ header{
             display:flex;
             flex-direction: column;
             margin: 10px;
-        
+            justify-content: center;
+            text-align: center;
+            @media(min-width:1200px){
+                
+                text-align: left;
+            }
             h5{
                 font-size:45px;
                 font-weight: bold;
                 font-family: 'DM Sans', sans-serif;
                 color: #191919;
-                text-align: center;
-                @media (min-width:376px){
-                    text-align: start;
-                }
+                
+                
                 
             }
             .long{
@@ -443,55 +446,49 @@ header{
                 
 }
 .about-company{
-
+    
     .container{
-        text-align: center;
+        
         padding:10px;
         gap:150px;
         display:block;
-        justify-content: center;
-        position: relative;
+        margin: 0 auto;
         @media (min-width:1200px){
             display:flex;
         }
         
-        
         .left-content{
+            
+            
             padding-bottom: 40px;
-            
-            
-            .bild{
-                position: relative;
+            position: relative;
+            .blue-box{
+                bottom: 100px;
+                left: -20px;
+                position: absolute;
+                padding: 30px;
+                color: #0E1021;
+                background-color: #BEEBFF;
                 
-                .blue-box{
-                    top:400px;
-                    left: 10px;
-                    position: absolute;
-                    padding: 30px;
-                    
-                    color: #0E1021;
-                    background-color: #BEEBFF;
-                    
-                    
-                    h2{
-                        color: #191919;
-                        font-size: 20px;
-                        font-weight: 700;
-                    }
-                    span{
-                        color: #F94D1C;
-                    }
+                
+                h2{
+                    color: #191919;
+                    font-size: 20px;
+                    font-weight: 700;
                 }
-                
-                
-                .white-box{
-                
-                    position: absolute;
-                    top: 20px;
-                    left: 0px;
- 
+                span{
+                    color: #F94D1C;
                 }
             }
+            .white-box{
+                position: absolute;
+                left: -20px;
+                top: 30px;
+            }
+            .women{
+                
+            }
+            
         }
 
         
@@ -1194,6 +1191,7 @@ header{
     }
 }
 .article-and-news{
+
     .container{
         
         .head-content{
@@ -1210,6 +1208,8 @@ header{
             }
         }
         .flex-content{
+            
+            position: relative;
             text-align: center;
             flex-direction: column;
             display:flex;
@@ -1217,12 +1217,45 @@ header{
             @media (min-width:1405px){
                 display:flex;
                 flex-direction: row;
-
-               
             }
+            .box1{
+                
+                position: relative;
+                z-index: 0;
+                .image{
+                    position: relative;
+                    
+                    .date{
+                        text-align: center;
+                        align-items: center;
+                        width: 60px;
+                        height: 60px;
+                        background-color: #f0d596;
+                        padding-top: 4px;
+                        position: absolute;
+                        left: 15px;
+                        top: 15px;
+                        
+                        .month{
+                            margin: 0px;
+                            padding: 0px;
+                            
+                        }
+                        h4{
+                            margin: 0;
+                            padding: 0;
+                            font-weight: 700;
+                        }
+            
+                            
+                }
+            }
+        }
+            
+            
             p{
                 font-size: 16px;
-                padding-top: 10px;
+                
             }
             h2{
                 font-size: 22px;
@@ -1230,18 +1263,29 @@ header{
             }
             
             
-        }
+        
         .dots{
             padding-top: 80px;
             padding-bottom: 80px;
         }
         
+        }
     }
 }
 .Subscribe{
     background-color: #F0EFE9;
     position: relative;
     z-index: 0;
+    .icon{
+            
+            
+        right:0;
+        bottom: 50px;
+        z-index: -1;
+        position: absolute;
+        
+
+    }
     .container{
         z-index: 1;
         padding-top: 80px;
@@ -1268,17 +1312,15 @@ header{
             display:flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;
+            
             @media (min-width:1200px){
                 flex-direction: row;
             }
             a{
                 margin-left: 15px;
             }
-            .btn-yellow{
-                margin-top: 10px;
-            }
-            .sub-button{
+            
+            .input-content{
                 padding: 10px;
                 background-color: white;
                 border: 1px solid white;
@@ -1287,23 +1329,14 @@ header{
                 padding: 12px 25px;
                 border-radius: 25px;
                 font-weight: 600;
-
-                .input-content{
-                    border: none;
-
-                }
+                margin-bottom: 10px;
+                
+            }
+            .btn-yellow{
+                margin-bottom: 10px;
             }
         }
-        .icon{
-            
-            
-            right:0;
-            bottom: 50px;
-            z-index: -1;
-            position: absolute;
-            
-
-        }
+        
         
     }
     
