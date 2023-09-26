@@ -1460,6 +1460,13 @@ footer .copyright-content .container .copyright .socialmedia-bar a:hover {
   display: flex;
   flex-direction: column;
 }
+.leave-message-card .container .sub .yourmessage {
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  margin: 10px;
+}
 .leave-message-card .container .sub a {
   margin-left: 15px;
 }
