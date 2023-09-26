@@ -1583,26 +1583,21 @@ footer{
             a{
                 margin-left: 15px;
             }
-            .sub-button{
-                background-color: white;
-                border: 1px solid white;
-                color: #191919;
-                text-decoration: none;  
-                border-radius: 25px;
-                font-weight: 600;
-                margin: 10px;
-                padding: 12px 25px;
-                
+            
                 .input-content{
                     border: none;
                     text-align: left;
                     width: 100%;
                     outline: none;
+                    padding: 10px;
+                    border-radius: 20px;
+                    margin: 10px;
+                    padding-left: 20px;
                 }
-            }
-        }  
-    }
+        }
+    }  
 }
+
 .map{
     padding-top: 100px;
     text-align: center;

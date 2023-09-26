@@ -1366,21 +1366,15 @@ footer .copyright-content .container .copyright .socialmedia-bar a:hover {
 .leave-message-card .container .sub a {
   margin-left: 15px;
 }
-.leave-message-card .container .sub .sub-button {
-  background-color: white;
-  border: 1px solid white;
-  color: #191919;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: 600;
-  margin: 10px;
-  padding: 12px 25px;
-}
-.leave-message-card .container .sub .sub-button .input-content {
+.leave-message-card .container .sub .input-content {
   border: none;
   text-align: left;
   width: 100%;
   outline: none;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+  padding-left: 20px;
 }
 
 .map {
