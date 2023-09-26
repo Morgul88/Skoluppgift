@@ -383,7 +383,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
 
 .about-company .container {
   padding: 10px;
-  gap: 150px;
+  gap: 100px;
   display: block;
   margin: 0 auto;
 }
@@ -393,11 +393,10 @@ header .container nav a.active:after, header .container nav a:hover::after {
   }
 }
 .about-company .container .left-content {
+  justify-content: center;
+  display: flex;
   padding-bottom: 40px;
   position: relative;
-}
-.about-company .container .left-content .women {
-  width: 100%;
 }
 .about-company .container .left-content .blue-box {
   bottom: 100px;
@@ -467,14 +466,23 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .about-company .rap {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
 }
-.about-company .rap span {
+@media (min-width: 1200px) {
+  .about-company .rap {
+    justify-content: start;
+  }
+}
+.about-company .rap .video {
+  display: flex;
+}
+.about-company .rap p {
   display: none;
+  align-items: center;
+  padding-left: 10px;
+  margin: 0;
 }
 @media (min-width: 391px) {
-  .about-company .rap span {
+  .about-company .rap p {
     display: flex;
   }
 }
@@ -482,10 +490,10 @@ header .container nav a.active:after, header .container nav a:hover::after {
   color: white;
   background-color: #191919;
   border: 1px solid #191919;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0;
-  margin-right: 25px;
+  align-items: center;
 }
 .about-company .rap .learn-more:hover {
   background-color: #ffffff;
@@ -493,10 +501,10 @@ header .container nav a.active:after, header .container nav a:hover::after {
   color: #000000;
 }
 .about-company .rap .liten-lada {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border: 1px solid #191919;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -505,18 +513,21 @@ header .container nav a.active:after, header .container nav a:hover::after {
   text-decoration: none;
   margin: 0;
 }
+.about-company .rap .liten-lada .anim {
+  display: none;
+}
 .about-company .rap .liten-lada:hover {
   background-color: #F9D783;
-  border: 1px solid #ffffff;
   color: #000000;
+}
+.about-company .rap .liten-lada:hover .no-anim {
+  display: none;
+}
+.about-company .rap .liten-lada:hover .anim {
+  display: flex;
 }
 .about-company .rap .liten-lada:hover .knapp {
   color: #191919;
-}
-@media (min-width: 391px) {
-  .about-company .rap .liten-lada {
-    display: flex;
-  }
 }
 @media (min-width: 376px) {
   .about-company .container {
@@ -614,8 +625,12 @@ header .container nav a.active:after, header .container nav a:hover::after {
   color: white;
   font-size: 20px;
 }
-.our-services .stor-box .box1 .box1-knapp a:hover {
-  background-color: #EDCF87;
+.our-services .stor-box .box1 .box1-knapp:hover {
+  background-color: white;
+  border-color: white;
+}
+.our-services .stor-box .box1 .box1-knapp:hover i {
+  color: #191919;
 }
 .our-services .stor-box .box1:hover {
   background-color: #EDCF87;
@@ -644,6 +659,13 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .our-services .stor-box .box2 .box2-knapp i {
   font-size: 20px;
 }
+.our-services .stor-box .box2 .box2-knapp:hover {
+  background-color: white;
+  border-color: white;
+}
+.our-services .stor-box .box2 .box2-knapp:hover i {
+  color: #191919;
+}
 .our-services .stor-box .box2:hover {
   background-color: #EDCF87;
 }
@@ -670,6 +692,13 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .our-services .stor-box .box3 .box3-knapp i {
   color: white;
   font-size: 20px;
+}
+.our-services .stor-box .box3 .box3-knapp:hover {
+  background-color: white;
+  border-color: white;
+}
+.our-services .stor-box .box3 .box3-knapp:hover i {
+  color: #191919;
 }
 .our-services .stor-box .box3:hover {
   background-color: #EDCF87;
@@ -698,6 +727,13 @@ header .container nav a.active:after, header .container nav a:hover::after {
   color: white;
   font-size: 20px;
 }
+.our-services .stor-box .box4 .box4-knapp:hover {
+  background-color: white;
+  border-color: white;
+}
+.our-services .stor-box .box4 .box4-knapp:hover i {
+  color: #191919;
+}
 .our-services .stor-box .box4:hover {
   background-color: #EDCF87;
 }
@@ -718,29 +754,83 @@ header .container nav a.active:after, header .container nav a:hover::after {
   gap: 100px;
 }
 .Why-choose-us .container .box1 {
-  text-align: left;
   width: auto;
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+.Why-choose-us .container .box1 .huvud-text {
+  text-align: center;
 }
 @media (min-width: 1200px) {
-  .Why-choose-us .container .box1 {
-    text-align: center;
+  .Why-choose-us .container .box1 .huvud-text {
+    text-align: left;
   }
 }
 .Why-choose-us .container .box1 .huvud-text h2 {
   font-size: 20px;
-  padding-bottom: 20px;
   padding-top: 20px;
   color: #F94D1C;
 }
 .Why-choose-us .container .box1 .huvud-text h1 {
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 40px;
   font-weight: bold;
+}
+.Why-choose-us .container .box1 .process {
+  text-decoration: none;
+  color: #191919;
+}
+.Why-choose-us .container .box1 .process .anim {
+  display: none;
+}
+.Why-choose-us .container .box1 .process:hover p {
+  text-decoration: underline;
+}
+.Why-choose-us .container .box1 .process:hover h6 {
+  text-decoration: underline;
+}
+.Why-choose-us .container .box1 .process:hover .no-anim {
+  display: none;
+}
+.Why-choose-us .container .box1 .process:hover .anim {
+  display: flex;
+}
+.Why-choose-us .container .box1 .process:hover .circle {
+  background-color: #F9D783;
+}
+.Why-choose-us .container .box1 .text-under-content {
+  text-align: left;
+  padding-bottom: 25px;
+}
+.Why-choose-us .container .box1 .text-under-content .content {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+@media (min-width: 1200px) {
+  .Why-choose-us .container .box1 .text-under-content .content {
+    text-align: left;
+    justify-content: flex-start;
+  }
+}
+.Why-choose-us .container .box1 .text-under-content .content .circle {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.Why-choose-us .container .box1 .text-under-content .text-content {
+  padding-top: 5px;
+  align-items: center;
+  padding-left: 20px;
+}
+.Why-choose-us .container .box1 .text-under-content .text-content h6 {
+  font-weight: 700;
 }
 .Why-choose-us .container .box2 {
   display: none;
@@ -1080,9 +1170,16 @@ header .container nav a.active:after, header .container nav a:hover::after {
   font-size: 22px;
   font-weight: 700;
 }
+.article-and-news .container .flex-content .no-underline {
+  text-decoration: none;
+}
 .article-and-news .container .flex-content .box1 {
+  color: #191919;
   position: relative;
   z-index: 0;
+}
+.article-and-news .container .flex-content .box1:hover p {
+  text-decoration: underline;
 }
 .article-and-news .container .flex-content .box1 img {
   width: 100%;
