@@ -1056,6 +1056,10 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .article-and-news .container .head-content .knapp {
   padding-bottom: 60px;
 }
+.article-and-news .container .dots {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
 .article-and-news .container .flex-content {
   position: relative;
   text-align: center;
@@ -1068,6 +1072,13 @@ header .container nav a.active:after, header .container nav a:hover::after {
     display: flex;
     flex-direction: row;
   }
+}
+.article-and-news .container .flex-content p {
+  font-size: 16px;
+}
+.article-and-news .container .flex-content h2 {
+  font-size: 22px;
+  font-weight: 700;
 }
 .article-and-news .container .flex-content .box1 {
   position: relative;
@@ -1099,17 +1110,6 @@ header .container nav a.active:after, header .container nav a:hover::after {
   margin: 0;
   padding: 0;
   font-weight: 700;
-}
-.article-and-news .container .flex-content p {
-  font-size: 16px;
-}
-.article-and-news .container .flex-content h2 {
-  font-size: 22px;
-  font-weight: 700;
-}
-.article-and-news .container .flex-content .dots {
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 .Subscribe {
