@@ -1446,6 +1446,9 @@ footer .copyright-content .container .copyright .socialmedia-bar a:hover {
   border: none;
 }
 
+.leave-message-card {
+  padding-bottom: 60px;
+}
 .leave-message-card .container {
   background-color: #F0EFE9;
   text-align: center;
@@ -1481,14 +1484,10 @@ footer .copyright-content .container .copyright .socialmedia-bar a:hover {
   padding-left: 20px;
 }
 
-.map {
-  padding-top: 100px;
-  text-align: center;
-  width: auto;
-  display: none;
-}
-@media (min-width: 1600px) {
-  .map {
-    display: block;
-  }
+.map .map-image {
+  background-image: url("/images/map2.jpg");
+  background-color: #cccccc;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
 }
