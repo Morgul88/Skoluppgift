@@ -598,14 +598,19 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 .our-services .stor-box {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: 10px;
   gap: 20px;
 }
-@media (min-width: 400px) {
+@media (min-width: 1200px) {
+  .our-services .stor-box {
+    display: Flex;
+  }
+}
+@media (max-width: 400px) {
   .our-services .stor-box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 .our-services .stor-box .box1 {
@@ -739,11 +744,6 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 .our-services .stor-box .box4:hover {
   background-color: #EDCF87;
-}
-@media (min-width: 1200px) {
-  .our-services .stor-box {
-    display: flex;
-  }
 }
 
 .Why-choose-us {
