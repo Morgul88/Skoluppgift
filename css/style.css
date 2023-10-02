@@ -45,6 +45,7 @@ footer {
   padding: 12px 25px;
   border-radius: 25px;
   font-weight: 600;
+  transition: background-color 0.5s;
 }
 .btn-yellow i {
   margin-left: 8px;
@@ -64,6 +65,7 @@ footer {
   padding: 12px 25px;
   border-radius: 25px;
   font-weight: 600;
+  transition: background-color 0.5s;
 }
 .btn-transparent i {
   margin-left: 8px;
@@ -83,6 +85,7 @@ footer {
   padding: 12px 25px;
   border-radius: 25px;
   font-weight: 600;
+  transition: background-color 0.5s;
 }
 .btn-long i {
   margin-left: 8px;
@@ -299,6 +302,8 @@ header .container nav a.active:after, header .container nav a:hover::after {
 
 .logo .container {
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .logo .container .icons-content {
   display: block;
@@ -392,6 +397,10 @@ header .container nav a.active:after, header .container nav a:hover::after {
     display: flex;
   }
 }
+.about-company .container .play-knapp {
+  display: flex;
+  margin-left: 30px;
+}
 .about-company .container .left-content {
   justify-content: center;
   display: flex;
@@ -434,59 +443,56 @@ header .container nav a.active:after, header .container nav a:hover::after {
     display: block;
   }
 }
-.about-company .content {
+.about-company .container .content {
   padding: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 @media (min-width: 1200px) {
-  .about-company .content {
+  .about-company .container .content {
     text-align: left;
   }
 }
-.about-company a {
+.about-company .container a {
   display: inline-block;
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 30px;
 }
-.about-company .highlight-text {
+.about-company .container .highlight-text {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.about-company h1 {
+.about-company .container h1 {
   font-size: 45px;
   font-weight: bold;
 }
-.about-company h2 {
+.about-company .container h2 {
   color: #F94D1C;
   font-weight: bold;
 }
-.about-company .rap {
+.about-company .container .rap {
   display: flex;
   justify-content: center;
 }
 @media (min-width: 1200px) {
-  .about-company .rap {
+  .about-company .container .rap {
     justify-content: start;
   }
 }
-.about-company .rap .video {
-  display: flex;
-}
-.about-company .rap p {
+.about-company .container .rap p {
   display: none;
   align-items: center;
   padding-left: 10px;
   margin: 0;
 }
 @media (min-width: 391px) {
-  .about-company .rap p {
+  .about-company .container .rap p {
     display: flex;
   }
 }
-.about-company .rap .learn-more {
+.about-company .container .rap .learn-more {
   color: white;
   background-color: #191919;
   border: 1px solid #191919;
@@ -495,12 +501,15 @@ header .container nav a.active:after, header .container nav a:hover::after {
   margin: 0;
   align-items: center;
 }
-.about-company .rap .learn-more:hover {
+.about-company .container .rap .learn-more:hover {
   background-color: #ffffff;
   border: 1px solid #191919;
   color: #000000;
 }
-.about-company .rap .liten-lada {
+.about-company .container .rap .play-knapp:hover .text {
+  text-decoration: underline;
+}
+.about-company .container .rap .liten-lada {
   width: 50px;
   height: 50px;
   border: 1px solid #191919;
@@ -513,26 +522,21 @@ header .container nav a.active:after, header .container nav a:hover::after {
   text-decoration: none;
   margin: 0;
 }
-.about-company .rap .liten-lada .anim {
+.about-company .container .rap .liten-lada .anim {
   display: none;
 }
-.about-company .rap .liten-lada:hover {
+.about-company .container .rap .liten-lada:hover {
   background-color: #F9D783;
   color: #000000;
 }
-.about-company .rap .liten-lada:hover .no-anim {
+.about-company .container .rap .liten-lada:hover .no-anim {
   display: none;
 }
-.about-company .rap .liten-lada:hover .anim {
+.about-company .container .rap .liten-lada:hover .anim {
   display: flex;
 }
-.about-company .rap .liten-lada:hover .knapp {
+.about-company .container .rap .liten-lada:hover .knapp {
   color: #191919;
-}
-@media (min-width: 376px) {
-  .about-company .container {
-    padding: 60px;
-  }
 }
 
 .our-services {
@@ -614,10 +618,12 @@ header .container nav a.active:after, header .container nav a:hover::after {
   }
 }
 .our-services .stor-box .box1 {
+  transition: background-color 0.3s;
   background: white;
   padding: 40px;
 }
 .our-services .stor-box .box1 .box1-knapp {
+  transition: background-color 0.5s;
   background-color: #191919;
   width: 60px;
   height: 60px;
@@ -647,10 +653,12 @@ header .container nav a.active:after, header .container nav a:hover::after {
   background-color: #EDCF87;
 }
 .our-services .stor-box .box2 {
+  transition: background-color 0.3s;
   background-color: white;
   padding: 40px;
 }
 .our-services .stor-box .box2 .box2-knapp {
+  transition: background-color 0.5s;
   width: 60px;
   height: 60px;
   border: 1px solid #191919;
@@ -680,6 +688,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
   background-color: #EDCF87;
 }
 .our-services .stor-box .box3 {
+  transition: background-color 0.3s;
   background: white;
   padding: 40px;
 }
@@ -697,6 +706,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
   text-decoration: none;
   margin: 0;
   margin-left: auto;
+  transition: background-color 0.5s;
 }
 .our-services .stor-box .box3 .box3-knapp i {
   color: white;
@@ -713,6 +723,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
   background-color: #EDCF87;
 }
 .our-services .stor-box .box4 {
+  transition: background-color 0.3s;
   background: white;
   padding: 40px;
 }
@@ -730,6 +741,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
   text-decoration: none;
   margin: 0;
   margin-left: auto;
+  transition: background-color 0.5s;
 }
 .our-services .stor-box .box4 .box4-knapp i {
   color: white;
@@ -1416,6 +1428,7 @@ footer .copyright-content .container .copyright .socialmedia-bar a:hover {
   }
 }
 .leave-message .container .box1 {
+  transition: background-color 0.3s;
   color: #191919;
   text-decoration: none;
   padding: 40px;
@@ -1490,7 +1503,7 @@ footer .copyright-content .container .copyright .socialmedia-bar a:hover {
 .map .map-image {
   background-image: url("/images/map2.jpg");
   background-color: #cccccc;
-  height: 300px;
+  height: 400px;
   background-position: center;
   background-size: cover;
 }

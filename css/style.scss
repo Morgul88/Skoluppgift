@@ -17,8 +17,9 @@ footer{
 
 .dots{
     text-align: center;
-        
+    
     a{
+        
         padding:5px;
         i{
             color: #b6b6b6;
@@ -51,7 +52,7 @@ footer{
     padding: 12px 25px;
     border-radius: 25px;
     font-weight: 600;
-
+    transition: background-color 0.5s;
     i{
         margin-left: 8px;
         font-size: 0.9em;
@@ -72,7 +73,7 @@ footer{
     padding: 12px 25px;
     border-radius: 25px;
     font-weight: 600;
-
+    transition: background-color 0.5s;
     i{
         margin-left: 8px;
         font-size: 0.9em;
@@ -93,7 +94,7 @@ footer{
     padding: 12px 25px;
     border-radius: 25px;
     font-weight: 600;
-    
+    transition: background-color 0.5s;
     
 
     i{
@@ -345,7 +346,8 @@ header{
 .logo{
     .container{
         text-align: center;
-        
+        padding-top: 50px;
+        padding-bottom: 50px;
         .icons-content{
             display:block;
             @media(min-width:1200px){
@@ -457,7 +459,11 @@ header{
         @media (min-width:1200px){
             display:flex;
         }
-        
+        .play-knapp{
+            display:flex;
+            margin-left: 30px;
+            
+        }
         .left-content{
             justify-content: center;
             display: flex;
@@ -509,7 +515,7 @@ header{
         
         
         
-        }
+        
         .content{
             
             padding:20px;
@@ -552,10 +558,7 @@ header{
                 justify-content: start;
             }
             
-            .video{
-                display:flex;
-                
-            }
+            
             p{
                 
                 display:none;
@@ -587,7 +590,14 @@ header{
                 }
                 
                 
-             }
+            }
+            .play-knapp{
+                &:hover{
+                    .text{
+                        text-decoration: underline;
+                    }
+                }
+            }
             .liten-lada{
                 
                 
@@ -608,8 +618,8 @@ header{
                 }
                 &:hover {
                 background-color: #F9D783;
-                
                 color: #000000;
+                
                 .no-anim{
                     display:none;
                 
@@ -621,21 +631,13 @@ header{
                 .knapp{
                     color: #191919;
                 }
-                
-     
-            }
-            
-        }
-        
-    }
-    @media (min-width:376px){
-        .container{
-            
-            padding:60px;
-        }
-    }         
-}
 
+                }
+        
+            }
+        }        
+    }    
+}
 .our-services {
     background: #f0efe9;
     
@@ -721,13 +723,11 @@ header{
         margin: 10px;
         gap: 20px;
         .box1 {
-            
+            transition: background-color 0.3s;
             background: white;
             padding: 40px;
-            
-            
-
             .box1-knapp {
+                transition: background-color 0.5s;
                 background-color: #191919;
                 width: 60px;
                 height: 60px;
@@ -762,11 +762,12 @@ header{
         }
 
         .box2 {
-            
+            transition: background-color 0.3s;
             background-color: white;
             padding: 40px;
 
             .box2-knapp {
+                transition: background-color 0.5s;
                 width: 60px;
                 height: 60px;
                 border: 1px solid #191919;
@@ -800,7 +801,7 @@ header{
  
         }
         .box3 {
-            
+            transition: background-color 0.3s;
             background: white;
             padding: 40px;
 
@@ -818,7 +819,7 @@ header{
                 text-decoration: none;
                 margin: 0;
                 margin-left: auto;
-
+                transition: background-color 0.5s;
                 i {
                     color: white;
                     font-size: 20px;
@@ -840,7 +841,7 @@ header{
         
 
         .box4 {
-            
+            transition: background-color 0.3s;
             background: white;
             padding: 40px;
 
@@ -858,7 +859,7 @@ header{
                 text-decoration: none;
                 margin: 0;
                 margin-left: auto;
-
+                transition: background-color 0.5s;
                 i {
                     color: white;
                     font-size: 20px;
@@ -1650,6 +1651,7 @@ footer{
             
         
         .box1{
+            transition: background-color 0.3s;
             color: #191919;
             text-decoration: none;
             padding:40px;
@@ -1735,7 +1737,7 @@ footer{
     .map-image{
     background-image: url("/images/map2.jpg");
     background-color: #cccccc;
-    height: 300px;
+    height: 400px;
     background-position: center;
     background-size: cover;
     }
