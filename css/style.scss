@@ -53,6 +53,8 @@ footer{
     border-radius: 25px;
     font-weight: 600;
     transition: background-color 0.5s;
+    
+    
     i{
         margin-left: 8px;
         font-size: 0.9em;
@@ -195,6 +197,7 @@ header{
             }
        }
        .menu{
+            
             grid-area: menu;
             border-top: 1px solid #DAD9D3;
             display:none;
@@ -202,9 +205,44 @@ header{
             align-items: center;
             margin-top: 10px;
             padding-top: 10px;
+            position: relative;
             @media (min-width:992px){
                 display:flex;
             }
+            .loginknapp{
+                position: absolute;  
+                animation: login 2s ease-in-out;
+                animation-delay: 1s;
+                top: 0;
+                right: 0;
+                margin-top: 10px;
+                padding-top: 10px;
+                z-index: 999;
+            }
+            @keyframes login{
+                20%{
+                    top: 0px;
+                    right: 0px;
+                }
+                40%{
+                    top: 50px;
+                    right: 0px;
+                }
+                60%{
+                    top: 50px;
+                    right: 200px
+                }
+                80%{
+                    top: 50px;
+                    right: -60px;
+                }
+                100%{
+                    top: 50px;
+                    right: 0px;
+                }
+            }
+               
+
         }
         nav{
             a{
@@ -946,6 +984,7 @@ header{
                         display:flex;
                     }
                     .circle{
+                        transition: background-color 2s;
                         background-color: #F9D783;
                         
                     }

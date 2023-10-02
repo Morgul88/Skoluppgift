@@ -180,10 +180,43 @@ header .container .menu {
   align-items: center;
   margin-top: 10px;
   padding-top: 10px;
+  position: relative;
 }
 @media (min-width: 992px) {
   header .container .menu {
     display: flex;
+  }
+}
+header .container .menu .loginknapp {
+  position: absolute;
+  animation: login 2s ease-in-out;
+  animation-delay: 1s;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  padding-top: 10px;
+  z-index: 999;
+}
+@keyframes login {
+  20% {
+    top: 0px;
+    right: 0px;
+  }
+  40% {
+    top: 50px;
+    right: 0px;
+  }
+  60% {
+    top: 50px;
+    right: 200px;
+  }
+  80% {
+    top: 50px;
+    right: -60px;
+  }
+  100% {
+    top: 50px;
+    right: 0px;
   }
 }
 header .container nav a {
@@ -812,6 +845,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
   display: flex;
 }
 .Why-choose-us .container .box1 .process:hover .circle {
+  transition: background-color 2s;
   background-color: #F9D783;
 }
 .Why-choose-us .container .box1 .text-under-content {
