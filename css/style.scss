@@ -973,9 +973,14 @@ header{
                 h1{
                     padding-bottom: 20px;
                     padding-top: 10px;
-                    font-size: 40px;
+                    font-size: 2rem;
                     font-weight: bold;
                     
+                }
+                @media(min-width:1200px){
+                    h1{
+                        font-size: 3rem;
+                    }
                 }
             }
             .process{
@@ -1011,6 +1016,7 @@ header{
                 padding-bottom: 25px;
                 
                 .content{
+                    
                     text-align: center;
                     justify-content: center;
                     @media(min-width:1200px){
@@ -1021,7 +1027,7 @@ header{
                     display:flex;
                     .circle{
                         
-                        display:flex;
+                        display:none;
                         text-align: center;
                         align-items: center;
                         justify-content: center;
@@ -1029,7 +1035,9 @@ header{
                         height: 60px;
                         border: 1px solid black;
                         border-radius: 50%;
-                        
+                        @media(min-width:500px){
+                            display: flex;
+                        }
                         
                     }
                 }
@@ -1161,17 +1169,20 @@ header{
         .head-liner{
             display:block;
             text-align: center;
+            
             @media(min-width:1200px){
                 text-align: center;
                 display:flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
+                
             }
             
             @media (min-width:1420px){
                 display:flex;
                 justify-content: space-between;
             }
+            
         }
         .knapp{
             justify-content: center;
@@ -1187,11 +1198,25 @@ header{
         }
         .section-title{
             padding:80px 0px 0px 0px;
-            
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            p{
+                text-align: center;
+                @media(min-width:1200px){
+                    text-align: left;
+                }
+            }
             @media(min-width:1200px){
                 padding-bottom: 80px;
             }
             
+            h2{
+                font-size: 2rem;
+                @media(min-width:1200px){
+                    font-size: 3rem;
+                }
+            }
         }
         .grid-content{
             display:grid;
@@ -1213,6 +1238,7 @@ header{
                 
                 img{
                     padding-bottom: 30px;
+                    width: 100%;
                 }
                 h5{
                     font-family: 'DM Sans', sans-serif;
@@ -1255,23 +1281,36 @@ header{
     justify-content: center;
     
     .container{
-        margin:40px;
+        margin: 50px 5px 50px 5px;
         border: 1px solid black;
         background-color: white;
-        padding-left: 40px;
-        padding-right: 40px;
+        
         .section-title{
             text-align: center;
             padding-bottom: 30px;
+            h2{
+                font-size: 2rem;
+                @media(min-width:1200px){
+                    font-size: 3rem;
+                }
+            }
         }
+        
         .grid-content{
             
             margin:50px 0px 80px 0px;
             display: flex;
             flex-direction: column;
-            align-items: center;
             text-align: center;
-
+            align-items: center;
+            p{
+                text-align: center;
+            }
+            @media(min-width:1401px){
+                p{
+                    text-align: left;
+                }
+            }
             @media (min-width:1401px){
                 display:grid;
                 grid-template-columns: 1fr 1fr 1fr;
@@ -1294,6 +1333,7 @@ header{
                 grid-area: box2;
                 img{
                     padding-right: 15px;
+                    padding-bottom: 10px;
                 }
                 p{
                     color: #F94D1C;
@@ -1312,6 +1352,7 @@ header{
                 grid-area: box4;
                 img{
                     padding-right: 15px;
+                    padding-bottom: 10px;
                 }
                 p{
                     color: #F94D1C;
@@ -1327,7 +1368,7 @@ header{
                 }
             }
             .box6{
-                
+                border-bottom: 1px solid rgb(182, 182, 182);
                 grid-area: box6;
                 p{
                     color: #F94D1C;
@@ -1336,12 +1377,17 @@ header{
                 }
                 img{
                     padding-right: 15px;
+                    padding-bottom: 10px;
                 }
             }
             
             .liten-box{
                 display:Flex;
-                padding:0px 20px 20px 20px;
+                padding: 0px;
+                @media(min-width:1200px){
+                    padding:0px 20px 20px 20px;
+                    
+                }
                 .small-content h4{
                     font-size: 22px;
                     font-weight: 700;
@@ -1354,15 +1400,10 @@ header{
         }
         .knapp{
             padding-bottom: 100px;
-            margin:60px;
             text-align: center;
-            display:none;
-            @media (min-width:1200px){
-                display:block;
-            }
+
             .btn-yellow{
                 padding:20px 30px 20px 30px;
-                
                 background-color: #191919;
                 color:white;
                 border: 1px solid black;
@@ -1378,20 +1419,55 @@ header{
 .article-and-news{
 
     .container{
-        
-        .head-content{
+            
+        .content-group{
+            padding-top: 70px;
+            padding-bottom: 20px;
             text-align: center;
-            display:block;
-            justify-content: space-between;
-            align-items: center;
-            @media (min-width:1200px){
-                display:flex;
+            .head{
+                p{
+                    text-align: center;
+                    color:#f94d1c;
+                    font-weight: 700;
+                    @media(min-width:1200px){
+                        text-align: left;
+                    }
+                }
             }
-            .knapp{
+            .content-buttom{
+                display:block;
                 
-                padding-bottom: 60px;
+                @media(min-width:1200px){
+                    display:flex;
+                    justify-content: space-between;
+
+                }
+                
+                h2{
+                    margin-bottom: 30px;
+                    color: #191919;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 2.5rem;
+                    @media(min-width:1200px){
+                        margin-bottom: 0px;
+                    }
+                    
+                }
+                .btn-yellow{
+                    
+                    background-color: white;
+                    border: 1px solid black;
+                    &:hover{
+                        background-color: #191919;
+                        color: white;
+                    }
+                }
             }
         }
+           
+        
+        
         .dots{
             padding-bottom: 30px;
             padding-top: 30px;
@@ -1475,14 +1551,10 @@ header{
     position: relative;
     z-index: 0;
     .icon{
-            
-            
         right:0;
         bottom: 50px;
         z-index: -1;
         position: absolute;
-        
-
     }
     .container{
         z-index: 1;
@@ -1498,7 +1570,10 @@ header{
             justify-content: space-between;
         }
         h1{
-            font-size: 45px;
+            font-size: 2rem;
+            @media(min-width:1200px){
+                font-size: 2.5;
+            }
             font-weight: 700;
             margin-right: 10px;
             text-align: center;
@@ -1524,9 +1599,9 @@ header{
                 border: 1px solid white;
                 color: #191919;
                 text-decoration: none;  
-                padding: 12px 25px;
+                padding: 12px 20px;
                 border-radius: 25px;
-                font-weight: 600;
+                font-weight: 300;
                 margin-bottom: 10px;
                 
             }
@@ -1587,6 +1662,11 @@ footer{
                 .links-content{
                     display:flex;
                     flex-direction: column;
+                    a{
+                        &:hover{
+                            color:white;
+                        }
+                    }
                     
                     h2{
                         color: white;
