@@ -159,7 +159,7 @@ header{
                 padding-right: 20px;
                 border-right: 1px solid #DBDAD5;
                 font-family: 'Inter', sans-serif;
-                font-size: 15px;
+                font-size: 1rem;
                 font-weight: 300;
                                                                         
                 i{
@@ -325,13 +325,13 @@ header{
             p{
                 padding-top: 35px;
                 padding-bottom: 35px;
-                font-size: 20px;
+                font-size: 1rem;
                 
             }
             h1{
                 font-family: 'DM Sans', sans-serif;
                 font-weight: 700;
-                font-size: 30px;
+                font-size: 2rem;
                 
                 @media (min-width:375px){
                     font-size: 40px;
@@ -424,22 +424,25 @@ header{
                 text-align: left;
             }
             h5{
-                font-size:45px;
+                font-size: 1.7rem;
                 font-weight: bold;
                 font-family: 'DM Sans', sans-serif;
                 color: #191919;
-                
-                
-                
             }
+            @media (min-width:1200px){
+                h5{
+                    font-size: 3rem;
+                }
+            }
+
             .long{
                 // innan
                 margin-left: auto;
                 margin-right: auto;
-                font-size: 16px;
+                font-size: 1rem;
                 text-align: center;
                 margin-top: 50px;
-                display: block;
+                
                 // efter
                 @media(min-width: 1200px){
                     margin-left: 0;
@@ -505,12 +508,19 @@ header{
         .left-content{
             justify-content: center;
             display: flex;
-
-            
             padding-bottom: 40px;
             position: relative;
-            .blue-box{
+            .women{
+                width: 100%;
+                @media(min-width:1200px){
+                    width: auto;
+                }
                 
+            }
+            .blue-box{
+                p{
+                    color: white;
+                }
                 bottom: 100px;
                 left: -20px;
                 position: absolute;
@@ -519,7 +529,9 @@ header{
                 
                 @media(min-width:560px){
                     background-color: #BEEBFF;
-                    
+                    p{
+                        color: #191919;
+                    }
                 }
                 
                 h2{
@@ -578,14 +590,19 @@ header{
                 
         }
         h1{
-            font-size: 45px;
+            font-size: 2rem;
             font-weight: bold;
+            @media(min-width:1200px){
+                font-size: 3rem;
+            }
         }
         h2{
             color: #F94D1C;
             font-weight: bold;
         }
-        
+        p{
+            font-size: 1rem;
+        }
         
         
         .rap{
@@ -722,7 +739,7 @@ header{
     .ensam-knapp {
         display: flex;
         justify-content: center;
-        margin: 40px;
+        margin: 40px 0px;
     }
 
     .extra {
@@ -750,7 +767,7 @@ header{
         @media(min-width:1200px){
             display:Flex;
         }
-        @media(max-width:400px){
+        @media(max-width:500px){
             display:grid;
             grid-template-columns: 1fr;
         }
@@ -915,9 +932,8 @@ header{
                 background-color: #EDCF87;
             }
         }
-    }
 
-    
+    }
 }
 .Why-choose-us{
     position: relative;
@@ -1020,7 +1036,10 @@ header{
                 .text-content{
                     padding-top: 5px;
                     align-items: center;
-                    padding-left: 20px;
+                    padding-left: 10px;
+                    @media(min-width:410px){
+                        padding-left: 20px;
+                    }
                     h6{
                         font-weight: 700;
                     }
@@ -1083,13 +1102,11 @@ header{
         .project-and-cases{
             display:grid;
             grid-template-columns: 1fr;
-            
             gap: 30px;
 
             @media (min-width:1200px) {
                 grid-template-columns: 1fr 1fr;
             }
-
 
             .project{
                 display:grid;
@@ -1200,12 +1217,12 @@ header{
                 h5{
                     font-family: 'DM Sans', sans-serif;
                     font-weight: 700;
-                    font-size: 22px;
+                    font-size: 1.5rem;
                 }
                 p{
                     font-family: 'DM Sans', sans-serif;
                     font-weight: 500;
-                    font-size: 16px;
+                    font-size: 1rem;
                     
                 }
                 &:hover{

@@ -144,7 +144,7 @@ header .container .contactinformation-bar .content-box {
   padding-right: 20px;
   border-right: 1px solid #DBDAD5;
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 300;
 }
 header .container .contactinformation-bar .content-box i {
@@ -290,12 +290,12 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .showcase .container .content p {
   padding-top: 35px;
   padding-bottom: 35px;
-  font-size: 20px;
+  font-size: 1rem;
 }
 .showcase .container .content h1 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 2rem;
 }
 @media (min-width: 375px) {
   .showcase .container .content h1 {
@@ -375,18 +375,22 @@ header .container nav a.active:after, header .container nav a:hover::after {
   }
 }
 .features .container .content-lada h5 {
-  font-size: 45px;
+  font-size: 1.7rem;
   font-weight: bold;
   font-family: "DM Sans", sans-serif;
   color: #191919;
 }
+@media (min-width: 1200px) {
+  .features .container .content-lada h5 {
+    font-size: 3rem;
+  }
+}
 .features .container .content-lada .long {
   margin-left: auto;
   margin-right: auto;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   margin-top: 50px;
-  display: block;
 }
 @media (min-width: 1200px) {
   .features .container .content-lada .long {
@@ -440,6 +444,14 @@ header .container nav a.active:after, header .container nav a:hover::after {
   padding-bottom: 40px;
   position: relative;
 }
+.about-company .container .left-content .women {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .about-company .container .left-content .women {
+    width: auto;
+  }
+}
 .about-company .container .left-content .blue-box {
   bottom: 100px;
   left: -20px;
@@ -447,9 +459,15 @@ header .container nav a.active:after, header .container nav a:hover::after {
   padding: 30px;
   color: #0E1021;
 }
+.about-company .container .left-content .blue-box p {
+  color: white;
+}
 @media (min-width: 560px) {
   .about-company .container .left-content .blue-box {
     background-color: #BEEBFF;
+  }
+  .about-company .container .left-content .blue-box p {
+    color: #191919;
   }
 }
 .about-company .container .left-content .blue-box h2 {
@@ -498,12 +516,20 @@ header .container nav a.active:after, header .container nav a:hover::after {
   margin-bottom: 30px;
 }
 .about-company .container h1 {
-  font-size: 45px;
+  font-size: 2rem;
   font-weight: bold;
+}
+@media (min-width: 1200px) {
+  .about-company .container h1 {
+    font-size: 3rem;
+  }
 }
 .about-company .container h2 {
   color: #F94D1C;
   font-weight: bold;
+}
+.about-company .container p {
+  font-size: 1rem;
 }
 .about-company .container .rap {
   display: flex;
@@ -614,7 +640,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .our-services .ensam-knapp {
   display: flex;
   justify-content: center;
-  margin: 40px;
+  margin: 40px 0px;
 }
 .our-services .extra {
   padding: 20px;
@@ -644,7 +670,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
     display: Flex;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .our-services .stor-box {
     display: grid;
     grid-template-columns: 1fr;
@@ -876,7 +902,12 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .Why-choose-us .container .box1 .text-under-content .text-content {
   padding-top: 5px;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 10px;
+}
+@media (min-width: 410px) {
+  .Why-choose-us .container .box1 .text-under-content .text-content {
+    padding-left: 20px;
+  }
 }
 .Why-choose-us .container .box1 .text-under-content .text-content h6 {
   font-weight: 700;
@@ -1038,12 +1069,12 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .meet-our-team .container .grid-content .picture-content h5 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 1.5rem;
 }
 .meet-our-team .container .grid-content .picture-content p {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .meet-our-team .container .grid-content .picture-content:hover {
   text-decoration: underline;
