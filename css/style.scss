@@ -331,7 +331,7 @@ header{
             h1{
                 font-family: 'DM Sans', sans-serif;
                 font-weight: 700;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 
                 @media (min-width:375px){
                     font-size: 40px;
@@ -398,21 +398,20 @@ header{
     }
 }
 .features{
-
-    padding-bottom: 10px;
-    @media (min-width:376px){
-        .features{
-            padding-bottom: 80px;
-        }
-    }   
+    padding-bottom: 60px;
+    
     .container{
-
-        padding:60px;
+        
+        @media(min-width:1200px){
+            padding:60px;
+            display:flex;
+            
+        }
         border: 1px solid #DBDAD5;
         gap: 40px;
-        display: flex;
+        display: block;
         justify-content: center;
-        
+        text-align: center;
         .content-lada{
             display:flex;
             flex-direction: column;
@@ -424,11 +423,12 @@ header{
                 text-align: left;
             }
             h5{
-                font-size: 1.7rem;
+                font-size: 1.5rem;
                 font-weight: bold;
                 font-family: 'DM Sans', sans-serif;
                 color: #191919;
             }
+            
             @media (min-width:1200px){
                 h5{
                     font-size: 3rem;
@@ -439,7 +439,7 @@ header{
                 // innan
                 margin-left: auto;
                 margin-right: auto;
-                font-size: 1rem;
+                font-size: 0.8rem;
                 text-align: center;
                 margin-top: 50px;
                 
@@ -458,12 +458,9 @@ header{
         }
 
         .content{
-
             margin:50px;
-            display:none;
             flex-direction: column;
-            
-            
+
             .content-box{
                 i{
                     font-size: 40px;
@@ -472,10 +469,10 @@ header{
                     
                 }
                 h6{
-                    font-size: 22px;
-                    font-weight: bold; 
-                    
+                    font-size: 1.2rem;
+                    font-weight: bold;  
                 }
+                
                 
             }
         }
@@ -1368,7 +1365,7 @@ header{
                 }
             }
             .box6{
-                border-bottom: 1px solid rgb(182, 182, 182);
+                
                 grid-area: box6;
                 p{
                     color: #F94D1C;

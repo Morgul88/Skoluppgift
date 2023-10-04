@@ -295,7 +295,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .showcase .container .content h1 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 @media (min-width: 375px) {
   .showcase .container .content h1 {
@@ -348,19 +348,20 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 
 .features {
-  padding-bottom: 10px;
-}
-@media (min-width: 376px) {
-  .features .features {
-    padding-bottom: 80px;
-  }
+  padding-bottom: 60px;
 }
 .features .container {
-  padding: 60px;
   border: 1px solid #DBDAD5;
   gap: 40px;
-  display: flex;
+  display: block;
   justify-content: center;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .features .container {
+    padding: 60px;
+    display: flex;
+  }
 }
 .features .container .content-lada {
   display: flex;
@@ -375,7 +376,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
   }
 }
 .features .container .content-lada h5 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: bold;
   font-family: "DM Sans", sans-serif;
   color: #191919;
@@ -388,7 +389,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
 .features .container .content-lada .long {
   margin-left: auto;
   margin-right: auto;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
   margin-top: 50px;
 }
@@ -405,7 +406,6 @@ header .container nav a.active:after, header .container nav a:hover::after {
 }
 .features .container .content {
   margin: 50px;
-  display: none;
   flex-direction: column;
 }
 .features .container .content .content-box i {
@@ -414,7 +414,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
   margin-bottom: 20px;
 }
 .features .container .content .content-box h6 {
-  font-size: 22px;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 @media (min-width: 1200px) {
@@ -1215,7 +1215,6 @@ header .container nav a.active:after, header .container nav a:hover::after {
   padding: 15px 15px 15px 0px;
 }
 .testimonial .container .grid-content .box6 {
-  border-bottom: 1px solid rgb(182, 182, 182);
   grid-area: box6;
 }
 .testimonial .container .grid-content .box6 p {
