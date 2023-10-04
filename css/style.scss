@@ -1733,7 +1733,8 @@ footer{
         text-align: center;
         
         nav{
-            padding: 40px;
+            padding-top: 30px;
+            padding-bottom: 30px;
             a{
                 display:inline-block;
                 color: #191919;
@@ -1765,7 +1766,10 @@ footer{
             color: #191919;
             font-family: 'DM Sans';
             font-weight: 700;
-            font-size: 45px;
+            font-size: 2rem;
+            @media(min-width:1200px){
+                font-size: 2.5rem;
+            }
         }
         
     }
@@ -1785,7 +1789,7 @@ footer{
             
         
         .box1{
-            transition: background-color 0.3s;
+            transition: background-color 0.6s;
             color: #191919;
             text-decoration: none;
             padding:40px;
@@ -1793,10 +1797,17 @@ footer{
             display:flex;
             justify-content: center;
             margin: 20px;
-            
+            p{
+                font-size: 0.9rem;
+                
+            }
             
             .content{
-                padding-left: 20px;
+                padding-left: 0px;
+                @media(min-width:400px){
+                    padding-left: 20px;
+                }
+                text-align: center;
                 p{
                     margin: 0;
                 }
@@ -1809,7 +1820,10 @@ footer{
                 border-radius: 50%;
                 align-items: center;
                 justify-content: center;
-                display:flex;
+                display:none;
+                @media(min-width:400px){
+                    display:flex;
+                }
                 .icon{
                     font-size: 30px;
                     color: white;
@@ -1830,13 +1844,17 @@ footer{
     .container{
         background-color: #F0EFE9;
         text-align: center;
-        padding:0px 100px 80px 100px;
+        
         
         
         h1{
             padding-top: 120px;
             padding-bottom: 30px;
             font-weight: 700;
+            font-size: 2rem;
+            @media(min-width:1200px){
+                font-size: 3rem;
+            }
         }
         .sub{
             display:flex;
@@ -1847,16 +1865,18 @@ footer{
                 padding: 10px;
                 padding-left: 20px;
                 margin: 10px;
-                
+                width: 95%;
+                margin-bottom: 30px;
             }
             a{
                 margin-left: 15px;
+                margin-bottom: 60px;
             }
             
                 .input-content{
                     border: none;
                     text-align: left;
-                    width: 100%;
+                    width: 95%;
                     outline: none;
                     padding: 10px;
                     border-radius: 20px;
