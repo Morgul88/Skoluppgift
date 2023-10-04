@@ -405,13 +405,14 @@ header{
         @media(min-width:1200px){
             padding:60px;
             display:flex;
-            
+            text-align: left;
         }
         border: 1px solid #DBDAD5;
         gap: 40px;
         display: block;
         justify-content: center;
         text-align: center;
+
         .content-lada{
             display:flex;
             flex-direction: column;

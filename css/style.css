@@ -361,6 +361,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
   .features .container {
     padding: 60px;
     display: flex;
+    text-align: left;
   }
 }
 .features .container .content-lada {
