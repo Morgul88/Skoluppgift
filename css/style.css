@@ -344,6 +344,7 @@ header .container nav a.active:after, header .container nav a:hover::after {
 @media (min-width: 1200px) {
   .logo .container .icons-content {
     display: flex;
+    justify-content: center;
   }
 }
 
